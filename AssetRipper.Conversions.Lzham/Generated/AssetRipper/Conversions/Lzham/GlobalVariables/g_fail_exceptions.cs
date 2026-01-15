@@ -1,0 +1,23 @@
+namespace AssetRipper.Conversions.Lzham.GlobalVariables;
+
+internal static partial class g_fail_exceptions
+{
+	private static sbyte __value;
+
+	public static sbyte Value
+	{
+		get
+		{
+			return __value;
+		}
+		set
+		{
+			__value = value;
+		}
+	}
+
+	static g_fail_exceptions()
+	{
+		Value = 0;
+	}
+}

@@ -1,0 +1,30 @@
+using AssetRipper.Conversions.Lzham.Helpers;
+using AssetRipper.Conversions.Lzham.InlineArrays;
+
+namespace AssetRipper.Conversions.Lzham.GlobalVariables;
+
+[MangledName("??_C@_0CA@KGDCMNL@?$CFs?$CI?$CFu?$CJ?3?5Assertion?5failed?3?5?$CC?$CFs?$CC?6?$AA@")]
+[DemangledName("\"%s(%u): Assertion failed: \\\"%s\\\"\\n\"")]
+[CleanName("String")]
+internal static partial class String_z27cvv
+{
+	public unsafe static InlineArray32_SByte* __pointer;
+
+	public unsafe static InlineArray32_SByte Value
+	{
+		get
+		{
+			return *__pointer;
+		}
+		set
+		{
+			*__pointer = value;
+		}
+	}
+
+	unsafe static String_z27cvv()
+	{
+		__pointer = unchecked((InlineArray32_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray32_SByte))));
+		Value = InlineArrayHelper.Create<InlineArray32_SByte, byte>("%s(%u): Assertion failed: \"%s\"\n\0"u8);
+	}
+}

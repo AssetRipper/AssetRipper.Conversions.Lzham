@@ -1,0 +1,28 @@
+using AssetRipper.Conversions.Lzham.Helpers;
+using AssetRipper.Conversions.Lzham.Structures;
+
+namespace AssetRipper.Conversions.Lzham.GlobalFunctions;
+
+[MangledName("??0lzham_compress_state@lzham@@QEAA@XZ")]
+[DemangledName("public: __cdecl lzham::lzham_compress_state::lzham_compress_state(void)")]
+internal static partial class lzham_compress_state_Constructor
+{
+	public unsafe static void* Invoke(void* @this)
+	{
+		task_pool_Constructor.Invoke(@this);
+		unchecked
+		{
+			lzcompressor_Constructor.Invoke(&((lzham_lzham_compress_state*)@this)->m_compressor);
+			if (ExceptionInfo.Current == null)
+			{
+				_ = &((lzham_lzham_compress_state*)@this)->m_params;
+				return @this;
+			}
+			ExceptionInfo? current = ExceptionInfo.Current;
+			ExceptionInfo.Current = null;
+			task_pool_Destructor.Invoke(@this);
+			ExceptionInfo.Current = current;
+			return null;
+		}
+	}
+}

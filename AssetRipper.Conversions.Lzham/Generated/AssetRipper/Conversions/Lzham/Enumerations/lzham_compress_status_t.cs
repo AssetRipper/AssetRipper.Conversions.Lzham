@@ -1,0 +1,20 @@
+using AssetRipper.Conversions.Lzham.Helpers;
+
+namespace AssetRipper.Conversions.Lzham.Enumerations;
+
+[MangledName(".?AW4lzham_compress_status_t@@")]
+[DemangledName("enum lzham_compress_status_t")]
+public enum lzham_compress_status_t
+{
+	LZHAM_COMP_STATUS_NOT_FINISHED = 0,
+	LZHAM_COMP_STATUS_NEEDS_MORE_INPUT = 1,
+	LZHAM_COMP_STATUS_HAS_MORE_OUTPUT = 2,
+	LZHAM_COMP_STATUS_FIRST_SUCCESS_OR_FAILURE_CODE = 3,
+	LZHAM_COMP_STATUS_SUCCESS = 3,
+	LZHAM_COMP_STATUS_FIRST_FAILURE_CODE = 4,
+	LZHAM_COMP_STATUS_FAILED = 4,
+	LZHAM_COMP_STATUS_FAILED_INITIALIZING = 5,
+	LZHAM_COMP_STATUS_INVALID_PARAMETER = 6,
+	LZHAM_COMP_STATUS_OUTPUT_BUF_TOO_SMALL = 7,
+	LZHAM_COMP_STATUS_FORCE_DWORD = -1
+}

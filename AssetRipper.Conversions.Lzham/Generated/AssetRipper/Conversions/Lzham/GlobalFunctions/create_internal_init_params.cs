@@ -70,8 +70,8 @@ internal static partial class create_internal_init_params
 					num = 8;
 				}
 				num = clamp.Invoke(num, 1, 20) - 1;
-				((lzham_lzcompressor_init_params*)internal_params)->m_table_max_update_interval = (ushort)((lzham_table_update_settings*)g_table_update_settings.__pointer)[(uint)num].m_max_update_interval;
-				((lzham_lzcompressor_init_params*)internal_params)->m_table_update_interval_slow_rate = (ushort)((lzham_table_update_settings*)g_table_update_settings.__pointer)[(uint)num].m_slow_rate;
+				((lzham_lzcompressor_init_params*)internal_params)->m_table_max_update_interval = (ushort)((lzham_table_update_settings*)g_table_update_settings.Pointer)[(uint)num].m_max_update_interval;
+				((lzham_lzcompressor_init_params*)internal_params)->m_table_update_interval_slow_rate = (ushort)((lzham_table_update_settings*)g_table_update_settings.Pointer)[(uint)num].m_slow_rate;
 			}
 			return 3;
 		}

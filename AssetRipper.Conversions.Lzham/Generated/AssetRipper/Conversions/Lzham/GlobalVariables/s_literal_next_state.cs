@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -7,28 +8,31 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("unsigned char const *const lzham::s_literal_next_state")]
 internal static partial class s_literal_next_state
 {
-	public unsafe static InlineArray24_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray24_SByte __value;
 
-	public unsafe static InlineArray24_SByte Value
+	public unsafe static InlineArray24_SByte* Pointer => unchecked((InlineArray24_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray24_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static s_literal_next_state()
 	{
-		__pointer = unchecked((InlineArray24_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray24_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray24_SByte, byte>(new byte[24]
 		{
 			0, 0, 0, 0, 1, 2, 3, 4, 5, 6,
 			4, 5, 7, 7, 7, 7, 7, 7, 7, 10,
 			10, 10, 10, 10
 		});
+		PointerIndices.Register(Pointer);
 	}
 }

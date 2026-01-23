@@ -22,7 +22,7 @@ internal static partial class find_all_matches_callback
 		int num2 = 0;
 		int num3 = 0;
 		int num4 = 0;
-		scoped_perf_section_Constructor.Invoke(&lzham_scoped_perf_section2, String_d9apgb.__pointer);
+		scoped_perf_section_Constructor.Invoke(&lzham_scoped_perf_section2, String_d9apgb.Pointer);
 		unchecked
 		{
 			int num5 = (int)data;
@@ -111,9 +111,9 @@ internal static partial class find_all_matches_callback
 						{
 							int num19 = (byte)((sbyte*)ptr5)[(uint)j];
 							int num20 = (byte)((sbyte*)ptr)[(uint)((num10 - dist + j) & ((lzham_search_accelerator*)@this)->m_max_dict_size_mask)];
-							int num21 = (byte)((sbyte*)g_hamming_dist.__pointer)[(uint)(num20 ^ num19)];
+							int num21 = (byte)((sbyte*)g_hamming_dist.Pointer)[(uint)(num20 ^ num19)];
 							int num22 = (byte)((sbyte*)ptr7)[(uint)j];
-							if ((uint)(byte)((sbyte*)g_hamming_dist.__pointer)[(uint)(num22 ^ num19)] < (uint)num21)
+							if ((uint)(byte)((sbyte*)g_hamming_dist.Pointer)[(uint)(num22 ^ num19)] < (uint)num21)
 							{
 								((lzham_dict_match*)ptr2)[-1L].m_dist = num16;
 							}

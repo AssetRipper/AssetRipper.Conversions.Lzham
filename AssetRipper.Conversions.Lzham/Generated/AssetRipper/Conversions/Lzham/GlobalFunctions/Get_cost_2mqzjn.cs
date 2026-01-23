@@ -15,7 +15,7 @@ internal static partial class Get_cost_2mqzjn
 		unchecked
 		{
 			int num = ((bit == 0) ? ((ushort)((lzham_adaptive_bit_model*)@this)->m_bit_0_prob) : (2048 - (ushort)((lzham_adaptive_bit_model*)@this)->m_bit_0_prob));
-			return (uint)((int*)g_prob_cost.__pointer)[(uint)num];
+			return (uint)((int*)g_prob_cost.Pointer)[(uint)num];
 		}
 	}
 }

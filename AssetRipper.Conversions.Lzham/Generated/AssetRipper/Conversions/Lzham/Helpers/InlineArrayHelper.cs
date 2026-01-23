@@ -30,12 +30,23 @@ internal static partial class InlineArrayHelper
 
 	public static TElement GetElement<TBuffer, TElement>(this ref TBuffer buffer, int index) where TBuffer : struct, IInlineArray<TElement>
 	{
+		if (TBuffer.Length == 0)
+		{
+			return Unsafe.Add(ref Unsafe.As<TBuffer, TElement>(ref buffer), index);
+		}
 		return buffer.AsReadOnlySpan<TBuffer, TElement>()[index];
 	}
 
 	public static void SetElement<TBuffer, TElement>(this ref TBuffer buffer, int index, TElement value) where TBuffer : struct, IInlineArray<TElement>
 	{
-		buffer.AsSpan<TBuffer, TElement>()[index] = value;
+		if (TBuffer.Length == 0)
+		{
+			Unsafe.Add(ref Unsafe.As<TBuffer, TElement>(ref buffer), index) = value;
+		}
+		else
+		{
+			buffer.AsSpan<TBuffer, TElement>()[index] = value;
+		}
 	}
 
 	public static bool Equals<TBuffer, TElement>(TBuffer x, TBuffer y) where TBuffer : struct, IInlineArray<TElement>

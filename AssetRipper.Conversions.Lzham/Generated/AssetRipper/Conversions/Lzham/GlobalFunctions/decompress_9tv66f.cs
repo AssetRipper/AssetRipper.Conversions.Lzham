@@ -2070,8 +2070,8 @@ internal static partial class decompress_9tv66f
 					num66 = 8;
 				}
 				num66 = clamp.Invoke(num66, 1, 20) - 1;
-				num64 = (ushort)((lzham_table_update_settings*)g_table_update_settings.__pointer)[(uint)num66].m_max_update_interval;
-				num65 = (ushort)((lzham_table_update_settings*)g_table_update_settings.__pointer)[(uint)num66].m_slow_rate;
+				num64 = (ushort)((lzham_table_update_settings*)g_table_update_settings.Pointer)[(uint)num66].m_max_update_interval;
+				num65 = (ushort)((lzham_table_update_settings*)g_table_update_settings.Pointer)[(uint)num66].m_slow_rate;
 			}
 			bool flag = init2.Invoke(&((lzham_lzham_decompressor*)ptr)->m_lit_table, encoding: false, 256, num64, num65, null);
 			if (ExceptionInfo.Current != null)
@@ -2323,7 +2323,7 @@ internal static partial class decompress_9tv66f
 		unchecked
 		{
 			_ = &((lzham_lzham_decompressor*)ptr)->m_lzBase;
-			num15 = (byte)((sbyte*)m_lzx_position_extra_bits.__pointer)[(uint)num13];
+			num15 = (byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[(uint)num13];
 			if ((uint)num15 < 3u)
 			{
 				goto IL_9087;
@@ -2477,7 +2477,7 @@ internal static partial class decompress_9tv66f
 		int num85;
 		unchecked
 		{
-			if (num11 < (byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12])
+			if (num11 < (byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12])
 			{
 				if (ptr3 == ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
@@ -2504,11 +2504,11 @@ internal static partial class decompress_9tv66f
 				num35 = (byte)(*(sbyte*)ptr43);
 				goto IL_6aab;
 			}
-			num85 = (int)(((bool*)s_huge_match_code_len.__pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12]))) : 0);
-			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12];
+			num85 = (int)(((bool*)s_huge_match_code_len.Pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]))) : 0);
+			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12];
 		}
-		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12]);
-		num12 = unchecked(((int*)s_huge_match_base_len.__pointer)[(uint)num12] + num85);
+		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]);
+		num12 = unchecked(((int*)s_huge_match_base_len.Pointer)[(uint)num12] + num85);
 		goto IL_6b90;
 		IL_67aa:
 		num11 += 8;
@@ -3071,7 +3071,7 @@ internal static partial class decompress_9tv66f
 		int num116;
 		unchecked
 		{
-			if (num11 < (byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12])
+			if (num11 < (byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12])
 			{
 				if (ptr3 == ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
@@ -3099,11 +3099,11 @@ internal static partial class decompress_9tv66f
 				num27 = (byte)(*(sbyte*)ptr57);
 				goto IL_8f72;
 			}
-			num116 = (int)(((bool*)s_huge_match_code_len.__pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12]))) : 0);
-			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12];
+			num116 = (int)(((bool*)s_huge_match_code_len.Pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]))) : 0);
+			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12];
 		}
-		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12]);
-		num12 = unchecked(((int*)s_huge_match_base_len.__pointer)[(uint)num12] + num116);
+		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]);
+		num12 = unchecked(((int*)s_huge_match_base_len.Pointer)[(uint)num12] + num116);
 		goto IL_9059;
 		IL_9a80:
 		unchecked
@@ -3802,7 +3802,7 @@ internal static partial class decompress_9tv66f
 		unchecked
 		{
 			_ = &((lzham_lzham_decompressor*)ptr)->m_lzBase;
-			num2 = ((int*)m_lzx_position_base.__pointer)[(uint)num13] + num14;
+			num2 = ((int*)m_lzx_position_base.Pointer)[(uint)num13] + num14;
 			num6 = InstructionHelper.Select((uint)num6 < 7u, 7, 10);
 			goto IL_9c66;
 		}
@@ -4712,7 +4712,7 @@ internal static partial class decompress_9tv66f
 		IL_4ff1:
 		unchecked
 		{
-			num6 = (byte)((sbyte*)s_literal_next_state.__pointer)[(uint)num6];
+			num6 = (byte)((sbyte*)s_literal_next_state.Pointer)[(uint)num6];
 			num7++;
 			if (uint.MaxValue != 0 || (uint)num7 <= uint.MaxValue)
 			{
@@ -4862,7 +4862,7 @@ internal static partial class decompress_9tv66f
 		int num206;
 		unchecked
 		{
-			if (num11 < (byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12])
+			if (num11 < (byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12])
 			{
 				if (ptr3 == ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
@@ -4889,11 +4889,11 @@ internal static partial class decompress_9tv66f
 				num75 = (byte)(*(sbyte*)ptr89);
 				goto IL_7643;
 			}
-			num206 = (int)(((bool*)s_huge_match_code_len.__pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12]))) : 0);
-			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12];
+			num206 = (int)(((bool*)s_huge_match_code_len.Pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]))) : 0);
+			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12];
 		}
-		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.__pointer)[(uint)num12]);
-		num12 = unchecked(((int*)s_huge_match_base_len.__pointer)[(uint)num12] + num206);
+		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]);
+		num12 = unchecked(((int*)s_huge_match_base_len.Pointer)[(uint)num12] + num206);
 		goto IL_7728;
 		IL_71c8:
 		unchecked

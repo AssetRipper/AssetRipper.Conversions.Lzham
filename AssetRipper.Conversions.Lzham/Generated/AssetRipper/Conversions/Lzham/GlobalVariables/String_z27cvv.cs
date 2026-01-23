@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_z27cvv
 {
-	public unsafe static InlineArray32_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray32_SByte __value;
 
-	public unsafe static InlineArray32_SByte Value
+	public unsafe static InlineArray32_SByte* Pointer => unchecked((InlineArray32_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray32_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_z27cvv()
 	{
-		__pointer = unchecked((InlineArray32_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray32_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray32_SByte, byte>("%s(%u): Assertion failed: \"%s\"\n\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

@@ -31,8 +31,8 @@ internal static partial class crc32
 				void* ptr3 = ptr2;
 				ptr2 = (byte*)ptr3 + 1;
 				sbyte b = *(sbyte*)ptr3;
-				num2 = (num2 >>> 4) ^ ((int*)s_crc32.__pointer)[(uint)((num2 & 0xF) ^ ((byte)b & 0xF))];
-				num2 = (num2 >>> 4) ^ ((int*)s_crc32.__pointer)[(uint)((num2 & 0xF) ^ ((byte)b >> 4))];
+				num2 = (num2 >>> 4) ^ ((int*)s_crc32.Pointer)[(uint)((num2 & 0xF) ^ ((byte)b & 0xF))];
+				num2 = (num2 >>> 4) ^ ((int*)s_crc32.Pointer)[(uint)((num2 & 0xF) ^ ((byte)b >> 4))];
 			}
 			return num2 ^ -1;
 		}

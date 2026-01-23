@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -7,23 +8,25 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("public: static unsigned int *lzham::CLZDecompBase::m_lzx_position_extra_mask")]
 internal static partial class m_lzx_position_extra_mask
 {
-	public unsafe static InlineArray128_Int32* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray128_Int32 __value;
 
-	public unsafe static InlineArray128_Int32 Value
+	public unsafe static InlineArray128_Int32* Pointer => unchecked((InlineArray128_Int32*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray128_Int32 Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static m_lzx_position_extra_mask()
 	{
-		__pointer = unchecked((InlineArray128_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray128_Int32))));
 		Value = InlineArrayHelper.Create<InlineArray128_Int32, int>(new int[128]
 		{
 			0, 0, 0, 0, 1, 1, 3, 3, 7, 7,
@@ -40,5 +43,6 @@ internal static partial class m_lzx_position_extra_mask
 			33554431, 33554431, 33554431, 33554431, 33554431, 33554431, 33554431, 33554431, 33554431, 33554431,
 			33554431, 33554431, 33554431, 33554431, 33554431, 33554431, 33554431, 33554431
 		});
+		PointerIndices.Register(Pointer);
 	}
 }

@@ -28,7 +28,7 @@ internal static partial class lzham_malloc
 			void* ptr;
 			if ((ulong)num > 17179869184uL)
 			{
-				lzham_mem_error.Invoke(String_z2inc6.__pointer);
+				lzham_mem_error.Invoke(String_z2inc6.Pointer);
 				ptr = null;
 			}
 			else
@@ -48,7 +48,7 @@ internal static partial class lzham_malloc
 				}
 				if (ptr3 == null || (ulong)localsPointer->field_0 < (ulong)num)
 				{
-					lzham_mem_error.Invoke(String_tzftys.__pointer);
+					lzham_mem_error.Invoke(String_tzftys.Pointer);
 					ptr = null;
 				}
 				else

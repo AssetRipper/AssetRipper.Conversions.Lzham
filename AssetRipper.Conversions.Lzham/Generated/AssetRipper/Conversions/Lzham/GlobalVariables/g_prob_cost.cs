@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -7,23 +8,25 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("unsigned int *lzham::g_prob_cost")]
 internal static partial class g_prob_cost
 {
-	public unsafe static InlineArray2048_Int32* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray2048_Int32 __value;
 
-	public unsafe static InlineArray2048_Int32 Value
+	public unsafe static InlineArray2048_Int32* Pointer => unchecked((InlineArray2048_Int32*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray2048_Int32 Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static g_prob_cost()
 	{
-		__pointer = unchecked((InlineArray2048_Int32*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray2048_Int32))));
 		Value = InlineArrayHelper.Create<InlineArray2048_Int32, int>(new int[2048]
 		{
 			0, 184549376, 167772160, 157958118, 150994944, 145593887, 141180902, 137449776, 134217728, 131366860,
@@ -232,5 +235,6 @@ internal static partial class g_prob_cost
 			213674, 201754, 189839, 177931, 166028, 154131, 142240, 130355, 118475, 106601,
 			94734, 82872, 71015, 59165, 47320, 35482, 23649, 11821
 		});
+		PointerIndices.Register(Pointer);
 	}
 }

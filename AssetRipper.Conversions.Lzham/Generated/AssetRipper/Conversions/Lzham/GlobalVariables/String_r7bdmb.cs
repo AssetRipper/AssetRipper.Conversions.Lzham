@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_r7bdmb
 {
-	public unsafe static InlineArray34_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray34_SByte __value;
 
-	public unsafe static InlineArray34_SByte Value
+	public unsafe static InlineArray34_SByte* Pointer => unchecked((InlineArray34_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray34_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_r7bdmb()
 	{
-		__pointer = unchecked((InlineArray34_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray34_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray34_SByte, byte>("Max full match len2 distance: %u\n\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

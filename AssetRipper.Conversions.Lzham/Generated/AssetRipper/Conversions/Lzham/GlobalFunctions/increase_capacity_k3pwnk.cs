@@ -60,8 +60,8 @@ internal static partial class increase_capacity_k3pwnk
 							flag = false;
 							goto IL_0261;
 						}
-						sprintf_s.Invoke(&localsPointer->field_1, 256L, String_c93t5e.__pointer, default(ReadOnlySpan<nint>));
-						lzham_fail.Invoke(String_xra7zt.__pointer, String_qv32gu.__pointer, 42);
+						sprintf_s.Invoke(&localsPointer->field_1, 256L, String_c93t5e.Pointer, default(ReadOnlySpan<nint>));
+						lzham_fail.Invoke(String_xra7zt.Pointer, String_qv32gu.Pointer, 42);
 					}
 					((lzham_vector*)@this)->m_p = ptr2;
 				}
@@ -80,8 +80,8 @@ internal static partial class increase_capacity_k3pwnk
 							flag = false;
 							goto IL_0261;
 						}
-						sprintf_s.Invoke(&localsPointer->field_2, 256L, String_d6e2vj.__pointer, default(ReadOnlySpan<nint>));
-						lzham_fail.Invoke(String_xra7zt.__pointer, String_qv32gu.__pointer, 56);
+						sprintf_s.Invoke(&localsPointer->field_2, 256L, String_d6e2vj.Pointer, default(ReadOnlySpan<nint>));
+						lzham_fail.Invoke(String_xra7zt.Pointer, String_qv32gu.Pointer, 56);
 					}
 					void* ptr5 = pMover;
 					int size = ((lzham_vector*)@this)->m_size;

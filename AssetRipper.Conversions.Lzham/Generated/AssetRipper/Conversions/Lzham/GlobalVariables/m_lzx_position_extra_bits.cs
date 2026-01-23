@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -7,23 +8,25 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("public: static unsigned char *lzham::CLZDecompBase::m_lzx_position_extra_bits")]
 internal static partial class m_lzx_position_extra_bits
 {
-	public unsafe static InlineArray128_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray128_SByte __value;
 
-	public unsafe static InlineArray128_SByte Value
+	public unsafe static InlineArray128_SByte* Pointer => unchecked((InlineArray128_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray128_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static m_lzx_position_extra_bits()
 	{
-		__pointer = unchecked((InlineArray128_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray128_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray128_SByte, byte>(new byte[128]
 		{
 			0, 0, 0, 0, 1, 1, 2, 2, 3, 3,
@@ -40,5 +43,6 @@ internal static partial class m_lzx_position_extra_bits
 			25, 25, 25, 25, 25, 25, 25, 25, 25, 25,
 			25, 25, 25, 25, 25, 25, 25, 25
 		});
+		PointerIndices.Register(Pointer);
 	}
 }

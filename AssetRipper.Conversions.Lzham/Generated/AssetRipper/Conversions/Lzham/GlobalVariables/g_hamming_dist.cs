@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -7,23 +8,25 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("unsigned char *lzham::g_hamming_dist")]
 internal static partial class g_hamming_dist
 {
-	public unsafe static InlineArray256_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray256_SByte __value;
 
-	public unsafe static InlineArray256_SByte Value
+	public unsafe static InlineArray256_SByte* Pointer => unchecked((InlineArray256_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray256_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static g_hamming_dist()
 	{
-		__pointer = unchecked((InlineArray256_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray256_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray256_SByte, byte>(new byte[256]
 		{
 			0, 1, 1, 2, 1, 2, 2, 3, 1, 2,
@@ -53,5 +56,6 @@ internal static partial class g_hamming_dist
 			4, 5, 5, 6, 5, 6, 6, 7, 5, 6,
 			6, 7, 6, 7, 7, 8
 		});
+		PointerIndices.Register(Pointer);
 	}
 }

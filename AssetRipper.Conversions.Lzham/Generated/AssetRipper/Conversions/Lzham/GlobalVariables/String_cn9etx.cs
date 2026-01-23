@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_cn9etx
 {
-	public unsafe static InlineArray75_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray75_SByte __value;
 
-	public unsafe static InlineArray75_SByte Value
+	public unsafe static InlineArray75_SByte* Pointer => unchecked((InlineArray75_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray75_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_cn9etx()
 	{
-		__pointer = unchecked((InlineArray75_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray75_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray75_SByte, byte>("E:\\repos\\AssetRipper.Conversions.Lzham\\Original\\lzhamdecomp\\lzham_vector.h\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

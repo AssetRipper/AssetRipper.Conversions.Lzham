@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_b3sjk2
 {
-	public unsafe static InlineArray23_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray23_SByte __value;
 
-	public unsafe static InlineArray23_SByte Value
+	public unsafe static InlineArray23_SByte* Pointer => unchecked((InlineArray23_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray23_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_b3sjk2()
 	{
-		__pointer = unchecked((InlineArray23_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray23_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray23_SByte, byte>("lzham_realloc: bad ptr\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

@@ -25,7 +25,7 @@ internal static partial class parse_job_callback
 		unchecked
 		{
 			int num = (int)data;
-			_0scoped_perf_section.Invoke(&localsPointer->field_0, 0, String_kkiyv4.__pointer, default(ReadOnlySpan<nint>));
+			_0scoped_perf_section.Invoke(&localsPointer->field_0, 0, String_kkiyv4.Pointer, default(ReadOnlySpan<nint>));
 			void* parse_state = (byte*)(&((lzham_lzcompressor*)@this)->field_18) + (nint)(uint)num * (nint)sizeof(lzham_lzcompressor_parse_thread_state);
 			if ((((lzham_lzcompressor*)@this)->field_1.m_lzham_compress_flags & 2) != 0 && ((lzham_lzcompressor*)@this)->field_1.m_compression_level == 4)
 			{

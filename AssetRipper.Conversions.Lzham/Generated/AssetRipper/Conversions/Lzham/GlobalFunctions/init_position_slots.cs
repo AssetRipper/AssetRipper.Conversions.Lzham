@@ -15,7 +15,7 @@ internal static partial class init_position_slots
 		{
 			((lzham_CLZDecompBase*)@this)->m_cur_ofs = dict_size_log2;
 			((lzham_CLZDecompBase*)@this)->m_cur_state = 1 << dict_size_log2;
-			((lzham_CLZDecompBase*)@this)->m_match_hist = (byte)((sbyte*)g_num_lzx_position_slots.__pointer)[(uint)(dict_size_log2 - 15)];
+			((lzham_CLZDecompBase*)@this)->m_match_hist = (byte)((sbyte*)g_num_lzx_position_slots.Pointer)[(uint)(dict_size_log2 - 15)];
 		}
 	}
 }

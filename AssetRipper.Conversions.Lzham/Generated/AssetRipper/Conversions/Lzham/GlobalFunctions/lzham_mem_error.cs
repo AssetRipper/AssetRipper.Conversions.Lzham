@@ -10,6 +10,6 @@ internal static partial class lzham_mem_error
 	[return: NativeType("void")]
 	public unsafe static void Invoke([NativeType("char const *")] void* p_msg)
 	{
-		lzham_assert.Invoke(p_msg, String_pfb5rd.__pointer, 140);
+		lzham_assert.Invoke(p_msg, String_pfb5rd.Pointer, 140);
 	}
 }

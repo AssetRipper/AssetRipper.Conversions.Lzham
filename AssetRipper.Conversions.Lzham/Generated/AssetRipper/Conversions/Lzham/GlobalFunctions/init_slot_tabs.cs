@@ -17,8 +17,8 @@ internal static partial class init_slot_tabs
 		{
 			for (int i = 1; (uint)i < (uint)((lzham_CLZDecompBase*)@this)->m_match_hist; i++)
 			{
-				compute_lzx_position_slot.Invoke(@this, ((int*)m_lzx_position_base.__pointer)[(uint)i], &num, &num2);
-				compute_lzx_position_slot.Invoke(@this, ((int*)m_lzx_position_base.__pointer)[(uint)i] + ((int*)m_lzx_position_extra_mask.__pointer)[(uint)i], &num, &num2);
+				compute_lzx_position_slot.Invoke(@this, ((int*)m_lzx_position_base.Pointer)[(uint)i], &num, &num2);
+				compute_lzx_position_slot.Invoke(@this, ((int*)m_lzx_position_base.Pointer)[(uint)i] + ((int*)m_lzx_position_extra_mask.Pointer)[(uint)i], &num, &num2);
 			}
 			for (int j = 1; (uint)j <= (uint)(((lzham_CLZDecompBase*)@this)->m_cur_state - 1); j += 524288)
 			{

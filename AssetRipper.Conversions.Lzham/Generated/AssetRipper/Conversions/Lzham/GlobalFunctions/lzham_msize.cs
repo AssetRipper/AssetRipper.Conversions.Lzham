@@ -18,7 +18,7 @@ internal static partial class lzham_msize
 		{
 			if (((ulong)p & 0xFuL) != 0L)
 			{
-				lzham_mem_error.Invoke(String_xzs3ub.__pointer);
+				lzham_mem_error.Invoke(String_xzs3ub.Pointer);
 				return 0L;
 			}
 			long result = ((delegate*<void*, void*, long>)g_pMSize.Value)(p, g_pUser_data.Value);

@@ -24,12 +24,12 @@ internal static partial class lzham_realloc
 			void* ptr;
 			if (((ulong)p & 0xFuL) != 0L)
 			{
-				lzham_mem_error.Invoke(String_b3sjk2.__pointer);
+				lzham_mem_error.Invoke(String_b3sjk2.Pointer);
 				ptr = null;
 			}
 			else if ((ulong)size > 17179869184uL)
 			{
-				lzham_mem_error.Invoke(String_z2inc6.__pointer);
+				lzham_mem_error.Invoke(String_z2inc6.Pointer);
 				ptr = null;
 			}
 			else

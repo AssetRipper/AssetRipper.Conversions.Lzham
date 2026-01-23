@@ -254,7 +254,7 @@ internal static partial class advance
 		unchecked
 		{
 			long num8 = (uint)localsPointer->field_0;
-			if ((uint)(byte)((sbyte*)m_lzx_position_extra_bits.__pointer)[num8] >= 3u)
+			if ((uint)(byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[num8] >= 3u)
 			{
 				bool flag11 = update_sym.Invoke(&((lzham_lzcompressor_state*)@this)->field_13, localsPointer->field_1 & 0xF);
 				if (ExceptionInfo.Current != null)

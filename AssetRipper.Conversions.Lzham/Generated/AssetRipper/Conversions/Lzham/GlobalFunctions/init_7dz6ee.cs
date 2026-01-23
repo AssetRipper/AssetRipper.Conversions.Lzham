@@ -38,7 +38,7 @@ internal static partial class init_7dz6ee
 				((lzham_lzcompressor*)@this)->field_1.m_max_helper_threads = 0;
 			}
 			long num2 = ((lzham_lzcompressor_init_params*)@params)->m_compression_level;
-			llvm_memcpy_p0_p0_i64.Invoke(source: (byte*)s_level_settings.__pointer + (nint)num2 * sizeof(lzham_comp_settings), destination: &((lzham_lzcompressor*)@this)->field_2, length: 16L, isVolatile: false);
+			llvm_memcpy_p0_p0_i64.Invoke(source: (byte*)s_level_settings.Pointer + (nint)num2 * sizeof(lzham_comp_settings), destination: &((lzham_lzcompressor*)@this)->field_2, length: 16L, isVolatile: false);
 			num3 = 1 << ((lzham_lzcompressor*)@this)->field_1.m_dict_size_log2;
 			if (((lzham_lzcompressor_init_params*)@params)->m_num_seed_bytes != 0)
 			{

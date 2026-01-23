@@ -77,7 +77,7 @@ internal static partial class lzcompressor_Constructor
 												((lzham_lzcompressor*)@this)->field_23 = 0;
 												if (((ulong)@this & 7uL) != 0L)
 												{
-													lzham_assert.Invoke(String_eyp45t.__pointer, String_uf3mm8.__pointer, 77);
+													lzham_assert.Invoke(String_eyp45t.Pointer, String_uf3mm8.Pointer, 77);
 													if (ExceptionInfo.Current != null)
 													{
 														ExceptionInfo? current = ExceptionInfo.Current;

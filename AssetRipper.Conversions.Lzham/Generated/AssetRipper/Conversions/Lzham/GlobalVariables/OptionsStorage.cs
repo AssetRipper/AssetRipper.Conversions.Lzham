@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 
 namespace AssetRipper.Conversions.Lzham.GlobalVariables;
@@ -6,23 +7,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("unsigned __int64 `extern \"C\" __local_stdio_printf_options'::`2'::_OptionsStorage")]
 internal static partial class OptionsStorage
 {
-	public unsafe static long* __pointer;
+	[FixedAddressValueType]
+	private static long __value;
 
-	public unsafe static long Value
+	public unsafe static long* Pointer => unchecked((long*)Unsafe.AsPointer(ref __value));
+
+	public static long Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static OptionsStorage()
 	{
-		__pointer = unchecked((long*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(long))));
 		Value = 0L;
+		PointerIndices.Register(Pointer);
 	}
 }

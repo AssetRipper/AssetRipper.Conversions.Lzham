@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_fadq34
 {
-	public unsafe static InlineArray25_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray25_SByte __value;
 
-	public unsafe static InlineArray25_SByte Value
+	public unsafe static InlineArray25_SByte* Pointer => unchecked((InlineArray25_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray25_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_fadq34()
 	{
-		__pointer = unchecked((InlineArray25_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray25_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray25_SByte, byte>("---Regular lit: %u '%c'\n\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

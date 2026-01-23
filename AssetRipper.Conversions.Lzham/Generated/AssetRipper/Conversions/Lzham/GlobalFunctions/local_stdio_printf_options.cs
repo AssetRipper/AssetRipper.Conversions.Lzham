@@ -9,6 +9,6 @@ internal static partial class local_stdio_printf_options
 {
 	public unsafe static void* Invoke()
 	{
-		return OptionsStorage.__pointer;
+		return OptionsStorage.Pointer;
 	}
 }

@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_timpwh
 {
-	public unsafe static InlineArray10_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray10_SByte __value;
 
-	public unsafe static InlineArray10_SByte Value
+	public unsafe static InlineArray10_SByte* Pointer => unchecked((InlineArray10_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray10_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_timpwh()
 	{
-		__pointer = unchecked((InlineArray10_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray10_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray10_SByte, byte>("IsMatch:\n\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

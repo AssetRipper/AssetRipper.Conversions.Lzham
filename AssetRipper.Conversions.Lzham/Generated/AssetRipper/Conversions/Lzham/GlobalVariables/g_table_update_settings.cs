@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 using AssetRipper.Conversions.Lzham.Structures;
@@ -8,23 +9,25 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("struct lzham::table_update_settings *lzham::g_table_update_settings")]
 internal static partial class g_table_update_settings
 {
-	public unsafe static InlineArray20_lzham_table_update_settings* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray20_lzham_table_update_settings __value;
 
-	public unsafe static InlineArray20_lzham_table_update_settings Value
+	public unsafe static InlineArray20_lzham_table_update_settings* Pointer => unchecked((InlineArray20_lzham_table_update_settings*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray20_lzham_table_update_settings Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static g_table_update_settings()
 	{
-		__pointer = unchecked((InlineArray20_lzham_table_update_settings*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray20_lzham_table_update_settings))));
 		Value = new InlineArrayBuilder<InlineArray20_lzham_table_update_settings, lzham_table_update_settings>
 		{
 			new lzham_table_update_settings
@@ -128,5 +131,6 @@ internal static partial class g_table_update_settings
 				m_slow_rate = 384
 			}
 		};
+		PointerIndices.Register(Pointer);
 	}
 }

@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_e4f6vd
 {
-	public unsafe static InlineArray42_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray42_SByte __value;
 
-	public unsafe static InlineArray42_SByte Value
+	public unsafe static InlineArray42_SByte* Pointer => unchecked((InlineArray42_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray42_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_e4f6vd()
 	{
-		__pointer = unchecked((InlineArray42_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray42_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray42_SByte, byte>("\"lzham::vector operator=: Out of memory!\"\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

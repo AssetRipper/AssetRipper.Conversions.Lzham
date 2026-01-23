@@ -13,9 +13,9 @@ internal static partial class init_ptjsy3
 	{
 		if (!NumericHelper.IsUnorderedOrNotEquals(g_inv_freq.Value, 0.0))
 		{
-			query_counter_frequency.Invoke(g_freq.__pointer);
+			query_counter_frequency.Invoke(g_freq.Pointer);
 			g_inv_freq.Value = 1f / (float)g_freq.Value;
-			query_counter.Invoke(g_init_ticks.__pointer);
+			query_counter.Invoke(g_init_ticks.Pointer);
 		}
 	}
 }

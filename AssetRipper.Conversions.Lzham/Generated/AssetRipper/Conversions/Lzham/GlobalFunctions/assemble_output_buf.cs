@@ -86,7 +86,7 @@ internal static partial class assemble_output_buf
 					}
 					if (num5 != ((lzham_sym_freq*)ptr)->m_freq)
 					{
-						lzham_assert.Invoke(String_7hba9n.__pointer, String_ednjr4.__pointer, 1129);
+						lzham_assert.Invoke(String_7hba9n.Pointer, String_ednjr4.Pointer, 1129);
 					}
 				}
 				else

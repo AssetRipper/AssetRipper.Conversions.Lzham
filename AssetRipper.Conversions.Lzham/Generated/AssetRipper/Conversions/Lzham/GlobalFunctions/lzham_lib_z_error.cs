@@ -15,9 +15,9 @@ internal static partial class lzham_lib_z_error
 		{
 			for (int i = 0; (ulong)(uint)i < 10uL; i++)
 			{
-				if (((anon*)s_error_descs.__pointer)[(uint)i].m_err == err)
+				if (((anon*)s_error_descs.Pointer)[(uint)i].m_err == err)
 				{
-					return ((anon*)s_error_descs.__pointer)[(uint)i].m_pDesc;
+					return ((anon*)s_error_descs.Pointer)[(uint)i].m_pDesc;
 				}
 			}
 			return null;

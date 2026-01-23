@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_ednjr4
 {
-	public unsafe static InlineArray83_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray83_SByte __value;
 
-	public unsafe static InlineArray83_SByte Value
+	public unsafe static InlineArray83_SByte* Pointer => unchecked((InlineArray83_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray83_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_ednjr4()
 	{
-		__pointer = unchecked((InlineArray83_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray83_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray83_SByte, byte>("E:\\repos\\AssetRipper.Conversions.Lzham\\Original\\lzhamdecomp\\lzham_symbol_codec.cpp\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

@@ -78,7 +78,7 @@ internal static partial class Get_cost_vhfk4j
 			}
 			num3 += Get_cost_dep2td.Invoke(&((lzham_lzcompressor_state*)@this)->field_10, 2 + (num6 | (num - 1 << 3)));
 			long num7 = (uint)num;
-			int num8 = (byte)((sbyte*)m_lzx_position_extra_bits.__pointer)[num7];
+			int num8 = (byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[num7];
 			switch (num8)
 			{
 			case 0:

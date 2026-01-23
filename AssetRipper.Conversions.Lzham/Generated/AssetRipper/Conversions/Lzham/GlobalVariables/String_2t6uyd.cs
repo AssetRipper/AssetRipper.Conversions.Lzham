@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -8,23 +9,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [CleanName("String")]
 internal static partial class String_2t6uyd
 {
-	public unsafe static InlineArray17_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray17_SByte __value;
 
-	public unsafe static InlineArray17_SByte Value
+	public unsafe static InlineArray17_SByte* Pointer => unchecked((InlineArray17_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray17_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static String_2t6uyd()
 	{
-		__pointer = unchecked((InlineArray17_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray17_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray17_SByte, byte>("waiting for jobs\0"u8);
+		PointerIndices.Register(Pointer);
 	}
 }

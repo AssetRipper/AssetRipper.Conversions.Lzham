@@ -40,7 +40,7 @@ internal static partial class vector_unsigned_char_Assignment
 				}
 				if (!flag)
 				{
-					lzham_fail.Invoke(String_e4f6vd.__pointer, String_cn9etx.__pointer, 96);
+					lzham_fail.Invoke(String_e4f6vd.Pointer, String_cn9etx.Pointer, 96);
 					return @this;
 				}
 			}

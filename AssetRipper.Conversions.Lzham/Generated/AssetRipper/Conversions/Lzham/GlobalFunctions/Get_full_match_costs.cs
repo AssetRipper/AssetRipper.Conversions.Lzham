@@ -18,7 +18,7 @@ internal static partial class Get_full_match_costs
 			long num3 = Get_cost_2mqzjn.Invoke((byte*)(&((lzham_lzcompressor_state*)@this)->field_2) + (nint)(uint)is_match_model_index * (nint)sizeof(lzham_adaptive_bit_model), 1) + Get_cost_2mqzjn.Invoke((byte*)(&((lzham_lzcompressor_state*)@this)->field_3) + (nint)(uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state * (nint)sizeof(lzham_adaptive_bit_model), 0);
 			compute_lzx_position_slot.Invoke(lzbase, match_dist, &num, &num2);
 			long num4 = (uint)num;
-			int num5 = (byte)((sbyte*)m_lzx_position_extra_bits.__pointer)[num4];
+			int num5 = (byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[num4];
 			if ((uint)num5 < 3u)
 			{
 				num3 += convert_to_scaled_bitcost.Invoke(num5);

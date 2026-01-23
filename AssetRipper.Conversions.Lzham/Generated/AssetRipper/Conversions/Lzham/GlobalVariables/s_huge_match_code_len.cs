@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -7,23 +8,26 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("unsigned char const *const lzham::s_huge_match_code_len")]
 internal static partial class s_huge_match_code_len
 {
-	public unsafe static InlineArray4_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray4_SByte __value;
 
-	public unsafe static InlineArray4_SByte Value
+	public unsafe static InlineArray4_SByte* Pointer => unchecked((InlineArray4_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray4_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static s_huge_match_code_len()
 	{
-		__pointer = unchecked((InlineArray4_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray4_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray4_SByte, byte>(new byte[4] { 8, 10, 12, 16 });
+		PointerIndices.Register(Pointer);
 	}
 }

@@ -315,7 +315,7 @@ internal static partial class encode_aguvmj
 		unchecked
 		{
 			long num5 = (uint)localsPointer->field_0;
-			int num6 = (byte)((sbyte*)m_lzx_position_extra_bits.__pointer)[num5];
+			int num6 = (byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[num5];
 			if ((uint)num6 < 3u)
 			{
 				bool flag21 = encode_bits.Invoke(codec, localsPointer->field_1, num6);

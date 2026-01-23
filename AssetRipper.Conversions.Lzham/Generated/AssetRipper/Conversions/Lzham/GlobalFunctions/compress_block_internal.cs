@@ -57,7 +57,7 @@ internal static partial class compress_block_internal
 		unchecked
 		{
 			_ = ((lzham_lzcompressor*)@this)->field_12;
-			_0scoped_perf_section.Invoke(&localsPointer->field_0, 0, String_2p8789.__pointer, default(ReadOnlySpan<nint>));
+			_0scoped_perf_section.Invoke(&localsPointer->field_0, 0, String_2p8789.Pointer, default(ReadOnlySpan<nint>));
 			bool flag;
 			if (((lzham_lzcompressor*)@this)->field_3 < 0L)
 			{
@@ -301,11 +301,11 @@ internal static partial class compress_block_internal
 											num8 += ((lzham_lzcompressor_raw_parse_thread_state*)ptr4)->m_bytes_to_match;
 											num10 -= ((lzham_lzcompressor_raw_parse_thread_state*)ptr4)->m_bytes_to_match;
 										}
-										scoped_perf_section_Constructor.Invoke(&localsPointer->field_4, String_q343bu.__pointer);
+										scoped_perf_section_Constructor.Invoke(&localsPointer->field_4, String_q343bu.Pointer);
 										if ((((lzham_lzcompressor*)@this)->field_14 & 1) == 1 && (uint)num7 > 1u)
 										{
 											((lzham_lzcompressor*)@this)->field_19 = num7;
-											scoped_perf_section_Constructor.Invoke(&localsPointer->field_5, String_xvmi6j.__pointer);
+											scoped_perf_section_Constructor.Invoke(&localsPointer->field_5, String_xvmi6j.Pointer);
 											bool flag8 = queue_multiple_object_tasks_qegt6p.Invoke(((lzham_lzcompressor*)@this)->field_1.m_pTask_pool, @this, parse_job_callback.__pointer, 1L, num7 - 1, null);
 											if (ExceptionInfo.Current != null)
 											{
@@ -321,7 +321,7 @@ internal static partial class compress_block_internal
 											{
 												return false;
 											}
-											scoped_perf_section_Constructor.Invoke(&localsPointer->field_6, String_2t6uyd.__pointer);
+											scoped_perf_section_Constructor.Invoke(&localsPointer->field_6, String_2t6uyd.Pointer);
 											wait.Invoke((byte*)@this + 6444396, -1);
 										}
 										else
@@ -336,7 +336,7 @@ internal static partial class compress_block_internal
 												}
 											}
 										}
-										scoped_perf_section_Constructor.Invoke(&localsPointer->field_7, String_7dyiyi.__pointer);
+										scoped_perf_section_Constructor.Invoke(&localsPointer->field_7, String_7dyiyi.Pointer);
 										for (int l = 0; (uint)l < (uint)num7; l++)
 										{
 											void* ptr5 = (byte*)(&((lzham_lzcompressor*)@this)->field_18) + (nint)(uint)l * (nint)sizeof(lzham_lzcompressor_parse_thread_state);
@@ -397,7 +397,7 @@ internal static partial class compress_block_internal
 										}
 										continue;
 									}
-									scoped_perf_section_Constructor.Invoke(&localsPointer->field_9, String_dmyz8f.__pointer);
+									scoped_perf_section_Constructor.Invoke(&localsPointer->field_9, String_dmyz8f.Pointer);
 									add_bytes_end.Invoke(&((lzham_lzcompressor*)@this)->field_5);
 									bool flag11 = encode_eob.Invoke(&((lzham_lzcompressor*)@this)->field_16, dict_pos: localsPointer->field_1, dict: &((lzham_lzcompressor*)@this)->field_5, codec: &((lzham_lzcompressor*)@this)->field_6);
 									if (ExceptionInfo.Current != null)
@@ -409,7 +409,7 @@ internal static partial class compress_block_internal
 										flag = false;
 										break;
 									}
-									scoped_perf_section_Constructor.Invoke(&localsPointer->field_10, String_siua9a.__pointer);
+									scoped_perf_section_Constructor.Invoke(&localsPointer->field_10, String_siua9a.Pointer);
 									bool flag12 = stop_encoding.Invoke(&((lzham_lzcompressor*)@this)->field_6, support_arith: true);
 									if (ExceptionInfo.Current != null)
 									{
@@ -523,7 +523,7 @@ internal static partial class compress_block_internal
 									}
 									int num16 = size_s5xcpk.Invoke(Get_encoding_buf.Invoke(&((lzham_lzcompressor*)@this)->field_6));
 									update_block_history.Invoke(@this, num16, buf_len, (int)((uint)(num16 * 1000) / (uint)buf_len), (b3 & 1) == 1, (b & 1) == 1);
-									scoped_perf_section_Constructor.Invoke(&localsPointer->field_11, String_9pse5k.__pointer);
+									scoped_perf_section_Constructor.Invoke(&localsPointer->field_11, String_9pse5k.Pointer);
 									if (empty.Invoke(&((lzham_lzcompressor*)@this)->field_9))
 									{
 										swap_ufmqqg.Invoke(&((lzham_lzcompressor*)@this)->field_9, Get_encoding_buf.Invoke(&((lzham_lzcompressor*)@this)->field_6));

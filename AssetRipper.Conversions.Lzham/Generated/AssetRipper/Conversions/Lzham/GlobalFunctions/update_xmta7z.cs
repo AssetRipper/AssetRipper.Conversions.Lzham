@@ -50,7 +50,7 @@ internal static partial class update_xmta7z
 				int num6 = Get_match_len.Invoke(dict, 0, dist, ((uint)num5 >= 257u) ? 257 : num5, 0);
 				if ((uint)num4 > (uint)num6)
 				{
-					lzham_assert.Invoke(String_vkn2me.__pointer, String_v6uahj.__pointer, 1342);
+					lzham_assert.Invoke(String_vkn2me.Pointer, String_v6uahj.Pointer, 1342);
 				}
 				((lzham_lzcompressor_coding_stats*)@this)->m_total_truncated_matches += (((uint)num4 < (uint)num6) ? 1 : 0);
 				((int*)(&((lzham_lzcompressor_coding_stats*)@this)->m_match_truncation_len_hist))[maximum_67w4wi.Invoke(0, num6 - num4)]++;

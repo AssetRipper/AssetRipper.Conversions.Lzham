@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 using AssetRipper.Conversions.Lzham.Structures;
@@ -8,23 +9,25 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("struct lzham::comp_settings *lzham::s_level_settings")]
 internal static partial class s_level_settings
 {
-	public unsafe static InlineArray5_lzham_comp_settings* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray5_lzham_comp_settings __value;
 
-	public unsafe static InlineArray5_lzham_comp_settings Value
+	public unsafe static InlineArray5_lzham_comp_settings* Pointer => unchecked((InlineArray5_lzham_comp_settings*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray5_lzham_comp_settings Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static s_level_settings()
 	{
-		__pointer = unchecked((InlineArray5_lzham_comp_settings*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray5_lzham_comp_settings))));
 		Value = new InlineArrayBuilder<InlineArray5_lzham_comp_settings, lzham_comp_settings>
 		{
 			new lzham_comp_settings
@@ -63,5 +66,6 @@ internal static partial class s_level_settings
 				m_match_accel_max_probes = 128
 			}
 		};
+		PointerIndices.Register(Pointer);
 	}
 }

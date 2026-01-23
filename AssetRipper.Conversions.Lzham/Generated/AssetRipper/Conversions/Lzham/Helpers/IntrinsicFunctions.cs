@@ -127,60 +127,15 @@ internal static partial class IntrinsicFunctions
 		}
 	}
 
-	private unsafe static void* _standardInput;
-
-	private unsafe static void* _standardOutput;
-
-	private unsafe static void* _standardError;
-
 	private static readonly ConcurrentStack<nint> atexitFunctions = new ConcurrentStack<nint>();
 
 	private static readonly long StartTicks = Environment.TickCount64;
 
-	private unsafe static void* StandardInput
-	{
-		get
-		{
-			unchecked
-			{
-				if (_standardInput == null)
-				{
-					_standardInput = (void*)checked((nuint)Marshal.AllocHGlobal(1));
-				}
-				return _standardInput;
-			}
-		}
-	}
+	private unsafe static void* StandardInput => unchecked((void*)(nuint)1u);
 
-	private unsafe static void* StandardOutput
-	{
-		get
-		{
-			unchecked
-			{
-				if (_standardOutput == null)
-				{
-					_standardOutput = (void*)checked((nuint)Marshal.AllocHGlobal(1));
-				}
-				return _standardOutput;
-			}
-		}
-	}
+	private unsafe static void* StandardOutput => unchecked((void*)(nuint)2u);
 
-	private unsafe static void* StandardError
-	{
-		get
-		{
-			unchecked
-			{
-				if (_standardError == null)
-				{
-					_standardError = (void*)checked((nuint)Marshal.AllocHGlobal(1));
-				}
-				return _standardError;
-			}
-		}
-	}
+	private unsafe static void* StandardError => unchecked((void*)(nuint)3u);
 
 	[MangledName("puts")]
 	public unsafe static int PutString(sbyte* str)
@@ -188,7 +143,7 @@ internal static partial class IntrinsicFunctions
 		try
 		{
 			string text = Marshal.PtrToStringAnsi((nint)str);
-			Console.Write(text);
+			Console.WriteLine(text);
 			return text?.Length ?? 0;
 		}
 		catch

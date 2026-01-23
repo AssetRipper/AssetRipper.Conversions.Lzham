@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using AssetRipper.Conversions.Lzham.Helpers;
 using AssetRipper.Conversions.Lzham.InlineArrays;
 
@@ -7,23 +8,25 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("public: static unsigned char *lzham::CLZBase::m_slot_tab0")]
 internal static partial class m_slot_tab0
 {
-	public unsafe static InlineArray4096_SByte* __pointer;
+	[FixedAddressValueType]
+	private static InlineArray4096_SByte __value;
 
-	public unsafe static InlineArray4096_SByte Value
+	public unsafe static InlineArray4096_SByte* Pointer => unchecked((InlineArray4096_SByte*)Unsafe.AsPointer(ref __value));
+
+	public static InlineArray4096_SByte Value
 	{
 		get
 		{
-			return *__pointer;
+			return __value;
 		}
 		set
 		{
-			*__pointer = value;
+			__value = value;
 		}
 	}
 
 	unsafe static m_slot_tab0()
 	{
-		__pointer = unchecked((InlineArray4096_SByte*)PointerIndices.Register(NativeMemoryHelper.Allocate(sizeof(InlineArray4096_SByte))));
 		Value = InlineArrayHelper.Create<InlineArray4096_SByte, byte>(new byte[4096]
 		{
 			0, 1, 2, 3, 4, 4, 5, 5, 6, 6,
@@ -437,5 +440,6 @@ internal static partial class m_slot_tab0
 			23, 23, 23, 23, 23, 23, 23, 23, 23, 23,
 			23, 23, 23, 23, 23, 23
 		});
+		PointerIndices.Register(Pointer);
 	}
 }

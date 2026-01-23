@@ -19,7 +19,7 @@ internal static partial class Get_len2_match_cost
 			compute_lzx_position_slot.Invoke(lzbase, len2_match_dist, &num, &num2);
 			num3 += Get_cost_dep2td.Invoke(&((lzham_lzcompressor_state*)@this)->field_10, 2 + (0 | (num - 1 << 3)));
 			long num4 = (uint)num;
-			int num5 = (byte)((sbyte*)m_lzx_position_extra_bits.__pointer)[num4];
+			int num5 = (byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[num4];
 			switch (num5)
 			{
 			case 0:

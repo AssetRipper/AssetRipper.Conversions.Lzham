@@ -23,7 +23,7 @@ internal static partial class print_eta4gh
 			is_match.Invoke(lzdec);
 			_ = ((lzham_lzcompressor_state_base*)@this)->m_cur_state;
 			_ = ((lzham_CLZDecompBase*)lzdec)->m_cur_ofs;
-			printf.Invoke(String_h288ig.__pointer, default(ReadOnlySpan<nint>));
+			printf.Invoke(String_h288ig.Pointer, default(ReadOnlySpan<nint>));
 			if (!is_match.Invoke(lzdec))
 			{
 				int num3 = search_accelerator_Operator.Invoke(dict, ((lzham_CLZDecompBase*)lzdec)->m_cur_ofs);
@@ -32,7 +32,7 @@ internal static partial class print_eta4gh
 					switch (num3)
 					{
 					}
-					printf.Invoke(String_fadq34.__pointer, default(ReadOnlySpan<nint>));
+					printf.Invoke(String_fadq34.Pointer, default(ReadOnlySpan<nint>));
 					return;
 				}
 				switch (search_accelerator_Operator.Invoke(dict, (((lzham_CLZDecompBase*)lzdec)->m_cur_ofs - *(int*)(&((lzham_lzcompressor_state_base*)@this)->m_match_hist)) & ((lzham_search_accelerator*)dict)->m_max_dict_size_mask))
@@ -41,7 +41,7 @@ internal static partial class print_eta4gh
 				switch (num3)
 				{
 				}
-				printf.Invoke(String_eiv9zx.__pointer, default(ReadOnlySpan<nint>));
+				printf.Invoke(String_eiv9zx.Pointer, default(ReadOnlySpan<nint>));
 				return;
 			}
 			int num4 = Get_match_len.Invoke(dict, 0, Get_match_dist.Invoke(lzdec, @this), 257, 0);
@@ -51,18 +51,18 @@ internal static partial class print_eta4gh
 				{
 					if (((lzham_CLZDecompBase*)lzdec)->m_cur_state == 1)
 					{
-						printf.Invoke(String_s9ddh6.__pointer, default(ReadOnlySpan<nint>));
+						printf.Invoke(String_s9ddh6.Pointer, default(ReadOnlySpan<nint>));
 					}
 					else
 					{
 						_ = ((lzham_CLZDecompBase*)lzdec)->m_cur_state;
-						printf.Invoke(String_3ut65i.__pointer, default(ReadOnlySpan<nint>));
+						printf.Invoke(String_3ut65i.Pointer, default(ReadOnlySpan<nint>));
 					}
 				}
 				else
 				{
 					_ = ((lzham_CLZDecompBase*)lzdec)->m_cur_state;
-					printf.Invoke(String_sitzh3.__pointer, default(ReadOnlySpan<nint>));
+					printf.Invoke(String_sitzh3.Pointer, default(ReadOnlySpan<nint>));
 				}
 			}
 			else
@@ -80,21 +80,21 @@ internal static partial class print_eta4gh
 					}
 				}
 				long num5 = (uint)num;
-				int num6 = (byte)((sbyte*)m_lzx_position_extra_bits.__pointer)[num5];
+				int num6 = (byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[num5];
 				_ = ((lzham_CLZDecompBase*)lzdec)->m_match_hist;
 				_ = ((lzham_CLZDecompBase*)lzdec)->m_cur_state;
-				printf.Invoke(String_486qas.__pointer, default(ReadOnlySpan<nint>));
+				printf.Invoke(String_486qas.Pointer, default(ReadOnlySpan<nint>));
 				if ((uint)num6 >= 3u)
 				{
 					_ = ((lzham_CLZDecompBase*)lzdec)->m_match_hist & 0xF;
-					printf.Invoke(String_2kd87d.__pointer, default(ReadOnlySpan<nint>));
+					printf.Invoke(String_2kd87d.Pointer, default(ReadOnlySpan<nint>));
 				}
-				printf.Invoke(String_69wyxh.__pointer, default(ReadOnlySpan<nint>));
+				printf.Invoke(String_69wyxh.Pointer, default(ReadOnlySpan<nint>));
 			}
 			if ((uint)num4 > (uint)Get_len_wzf5xk.Invoke(lzdec))
 			{
 				_ = num4 - Get_len_wzf5xk.Invoke(lzdec);
-				printf.Invoke(String_4d3wsk.__pointer, default(ReadOnlySpan<nint>));
+				printf.Invoke(String_4d3wsk.Pointer, default(ReadOnlySpan<nint>));
 			}
 		}
 	}

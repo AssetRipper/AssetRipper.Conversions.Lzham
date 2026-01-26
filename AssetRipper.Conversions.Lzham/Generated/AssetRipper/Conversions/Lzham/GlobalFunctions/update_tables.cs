@@ -50,7 +50,7 @@ internal static partial class update_tables
 			}
 			if (localsPointer->field_0 != 0)
 			{
-				goto IL_0246;
+				goto IL_023e;
 			}
 			Get_generate_huffman_codes_table_size.Invoke();
 			localsPointer->field_2 = default(InlineArray0_SByte);
@@ -64,13 +64,13 @@ internal static partial class update_tables
 			{
 				if ((uint)localsPointer->field_0 <= 16u || ((limit_max_code_size.Invoke(pCodesizes: vector_unsigned_char_Operator_apxfsu.Invoke(&((lzham_raw_quasi_adaptive_huffman_data_model*)@this)->m_code_sizes, 0), num_syms: ((lzham_raw_quasi_adaptive_huffman_data_model*)@this)->m_total_syms, max_code_size: 16) ? 1u : 0u) & 1u) == 1)
 				{
-					goto IL_0246;
+					goto IL_023e;
 				}
 				flag = false;
 			}
-			goto IL_03f9;
+			goto IL_03f1;
 		}
-		IL_0246:
+		IL_023e:
 		unchecked
 		{
 			if (force_update_cycle >= 0)
@@ -107,9 +107,9 @@ internal static partial class update_tables
 				b2 = (flag2 ? ((sbyte)1) : ((sbyte)0));
 			}
 			flag = (((b2 & 1) == 1) ? true : false);
-			goto IL_03f9;
+			goto IL_03f1;
 		}
-		IL_03f9:
+		IL_03f1:
 		bool result = flag;
 		StackFrameList.Current.Clear(startFrame);
 		return result;

@@ -28,7 +28,6 @@ internal static partial class String_xaiud2
 
 	unsafe static String_xaiud2()
 	{
-		Value = default(InlineArray1_SByte);
 		PointerIndices.Register(Pointer);
 	}
 }

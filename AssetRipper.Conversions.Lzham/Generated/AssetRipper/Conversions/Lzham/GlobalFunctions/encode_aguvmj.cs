@@ -105,7 +105,7 @@ internal static partial class encode_aguvmj
 							if (flag7)
 							{
 								((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 9, 11);
-								goto IL_0a2f;
+								goto IL_0a2c;
 							}
 							flag2 = false;
 						}
@@ -253,7 +253,7 @@ internal static partial class encode_aguvmj
 					{
 						if (num3 < 0)
 						{
-							goto IL_0937;
+							goto IL_0934;
 						}
 						if (((lzham_CLZDecompBase*)lzdec)->m_cur_state > 257)
 						{
@@ -275,7 +275,7 @@ internal static partial class encode_aguvmj
 								}
 								if (flag19)
 								{
-									goto IL_0937;
+									goto IL_0934;
 								}
 								flag2 = false;
 							}
@@ -289,29 +289,29 @@ internal static partial class encode_aguvmj
 							}
 							if (flag20)
 							{
-								goto IL_0937;
+								goto IL_0934;
 							}
 							flag2 = false;
 						}
 					}
 				}
 			}
-			goto IL_0a4d;
+			goto IL_0a4a;
 		}
-		IL_09f4:
+		IL_09f1:
 		unchecked
 		{
 			update_match_hist.Invoke(@this, ((lzham_CLZDecompBase*)lzdec)->m_match_hist);
 			((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 7, 10);
-			goto IL_0a2f;
+			goto IL_0a2c;
 		}
 		IL_0740:
 		unchecked
 		{
 			((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 8, 11);
-			goto IL_0a2f;
+			goto IL_0a2c;
 		}
-		IL_0937:
+		IL_0934:
 		unchecked
 		{
 			long num5 = (uint)localsPointer->field_0;
@@ -325,7 +325,7 @@ internal static partial class encode_aguvmj
 				}
 				if (flag21)
 				{
-					goto IL_09f4;
+					goto IL_09f1;
 				}
 				flag2 = false;
 			}
@@ -341,7 +341,7 @@ internal static partial class encode_aguvmj
 					if (!flag22)
 					{
 						flag2 = false;
-						goto IL_0a4d;
+						goto IL_0a4a;
 					}
 				}
 				bool flag23 = encode_gbd3f5.Invoke(codec, model: &((lzham_lzcompressor_state*)@this)->field_13, sym: localsPointer->field_1 & 0xF);
@@ -351,13 +351,13 @@ internal static partial class encode_aguvmj
 				}
 				if (flag23)
 				{
-					goto IL_09f4;
+					goto IL_09f1;
 				}
 				flag2 = false;
 			}
-			goto IL_0a4d;
+			goto IL_0a4a;
 		}
-		IL_0a4d:
+		IL_0a4a:
 		bool result = flag2;
 		StackFrameList.Current.Clear(startFrame);
 		return result;
@@ -365,7 +365,7 @@ internal static partial class encode_aguvmj
 		unchecked
 		{
 			((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 8, 11);
-			goto IL_0a2f;
+			goto IL_0a2c;
 		}
 		IL_0553:
 		unchecked
@@ -436,14 +436,14 @@ internal static partial class encode_aguvmj
 					flag2 = false;
 				}
 			}
-			goto IL_0a4d;
+			goto IL_0a4a;
 		}
-		IL_0a2f:
+		IL_0a2c:
 		unchecked
 		{
 			((lzham_lzcompressor_state_base*)@this)->m_cur_ofs = ((lzham_CLZDecompBase*)lzdec)->m_cur_ofs + Get_len_wzf5xk.Invoke(lzdec);
 			flag2 = true;
-			goto IL_0a4d;
+			goto IL_0a4a;
 		}
 		IL_0158:
 		unchecked
@@ -460,7 +460,7 @@ internal static partial class encode_aguvmj
 			{
 				((lzham_lzcompressor_state_base*)@this)->m_cur_state -= 6;
 			}
-			goto IL_0a2f;
+			goto IL_0a2c;
 		}
 	}
 }

@@ -15,9 +15,4 @@ internal static partial class g_fail_exceptions
 			__value = value;
 		}
 	}
-
-	static g_fail_exceptions()
-	{
-		Value = 0;
-	}
 }

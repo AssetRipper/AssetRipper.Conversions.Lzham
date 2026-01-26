@@ -19,9 +19,4 @@ internal static partial class g_inv_freq
 			__value = value;
 		}
 	}
-
-	static g_inv_freq()
-	{
-		Value = 0.0;
-	}
 }

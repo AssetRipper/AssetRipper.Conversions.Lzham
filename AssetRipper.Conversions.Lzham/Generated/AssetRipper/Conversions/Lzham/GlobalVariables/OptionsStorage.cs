@@ -7,8 +7,13 @@ namespace AssetRipper.Conversions.Lzham.GlobalVariables;
 [DemangledName("unsigned __int64 `extern \"C\" __local_stdio_printf_options'::`2'::_OptionsStorage")]
 internal static partial class OptionsStorage
 {
+	private partial struct __WrapperType
+	{
+		public long __value;
+	}
+
 	[FixedAddressValueType]
-	private static long __value;
+	private static __WrapperType __value;
 
 	public unsafe static long* Pointer => unchecked((long*)Unsafe.AsPointer(ref __value));
 
@@ -16,17 +21,16 @@ internal static partial class OptionsStorage
 	{
 		get
 		{
-			return __value;
+			return __value.__value;
 		}
 		set
 		{
-			__value = value;
+			__value.__value = value;
 		}
 	}
 
 	unsafe static OptionsStorage()
 	{
-		Value = 0L;
 		PointerIndices.Register(Pointer);
 	}
 }

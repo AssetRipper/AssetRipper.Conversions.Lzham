@@ -19,9 +19,4 @@ internal static partial class Avx2WmemEnabledWeakValue
 			__value = value;
 		}
 	}
-
-	static Avx2WmemEnabledWeakValue()
-	{
-		Value = 0;
-	}
 }

@@ -19,9 +19,4 @@ internal static partial class g_pUser_data
 			__value = value;
 		}
 	}
-
-	unsafe static g_pUser_data()
-	{
-		Value = null;
-	}
 }

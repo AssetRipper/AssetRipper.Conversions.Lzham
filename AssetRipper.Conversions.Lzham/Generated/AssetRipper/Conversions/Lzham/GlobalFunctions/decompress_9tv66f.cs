@@ -188,7 +188,7 @@ internal static partial class decompress_9tv66f
 																																																									decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																									if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																																									{
-																																																										goto IL_b113;
+																																																										goto IL_b0db;
 																																																									}
 																																																									num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																																																									num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -201,12 +201,12 @@ internal static partial class decompress_9tv66f
 																																																									num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																																									num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																																									ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																																									goto IL_b23c;
+																																																									goto IL_b204;
 																																																								}
 																																																								decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																								if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																																								{
-																																																									goto IL_ae54;
+																																																									goto IL_ae1c;
 																																																								}
 																																																								num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																																																								num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -219,12 +219,12 @@ internal static partial class decompress_9tv66f
 																																																								num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																																								num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																																								ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																																								goto IL_af7d;
+																																																								goto IL_af45;
 																																																							}
 																																																							decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																							if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																																							{
-																																																								goto IL_ab6f;
+																																																								goto IL_ab37;
 																																																							}
 																																																							num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																																																							num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -237,7 +237,7 @@ internal static partial class decompress_9tv66f
 																																																							num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																																							num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																																							ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																																							goto IL_ac98;
+																																																							goto IL_ac60;
 																																																						}
 																																																						decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																						long flush_n = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
@@ -245,12 +245,12 @@ internal static partial class decompress_9tv66f
 																																																						*pFlush_src = (byte*)(*pFlush_src) + flush_n;
 																																																						long flush_n2 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
 																																																						((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining -= flush_n2;
-																																																						goto IL_a78f;
+																																																						goto IL_a75e;
 																																																					}
 																																																					decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																					if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																																					{
-																																																						goto IL_a401;
+																																																						goto IL_a3d0;
 																																																					}
 																																																					num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																																																					num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -263,7 +263,7 @@ internal static partial class decompress_9tv66f
 																																																					num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																																					num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																																					ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																																					goto IL_a52a;
+																																																					goto IL_a4f9;
 																																																				}
 																																																				decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																				long flush_n3 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
@@ -271,14 +271,14 @@ internal static partial class decompress_9tv66f
 																																																				*pFlush_src2 = (byte*)(*pFlush_src2) + flush_n3;
 																																																				long flush_n4 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
 																																																				((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining -= flush_n4;
-																																																				goto IL_9f04;
+																																																				goto IL_9eda;
 																																																			}
-																																																			goto IL_9d06;
+																																																			goto IL_9cdc;
 																																																		}
 																																																		decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																		if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																																		{
-																																																			goto IL_986a;
+																																																			goto IL_9840;
 																																																		}
 																																																		num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																																		num13 = ((lzham_lzham_decompressor*)ptr)->m_match_slot;
@@ -296,12 +296,12 @@ internal static partial class decompress_9tv66f
 																																																		ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 																																																		ptr4 = ((lzham_symbol_codec*)codec)->m_pSaved_huff_model;
 																																																		pDecode_tables = ((lzham_raw_quasi_adaptive_huffman_data_model*)ptr4)->m_pDecode_tables;
-																																																		goto IL_99c0;
+																																																		goto IL_9996;
 																																																	}
 																																																	decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																	if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																																	{
-																																																		goto IL_94e9;
+																																																		goto IL_94bf;
 																																																	}
 																																																	num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																																	num13 = ((lzham_lzham_decompressor*)ptr)->m_match_slot;
@@ -317,12 +317,12 @@ internal static partial class decompress_9tv66f
 																																																	num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																																	num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																																	ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																																	goto IL_962d;
+																																																	goto IL_9603;
 																																																}
 																																																decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																																if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																																{
-																																																	goto IL_91a9;
+																																																	goto IL_917f;
 																																																}
 																																																num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																																num13 = ((lzham_lzham_decompressor*)ptr)->m_match_slot;
@@ -338,12 +338,12 @@ internal static partial class decompress_9tv66f
 																																																num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																																num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																																ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																																goto IL_92ed;
+																																																goto IL_92c3;
 																																															}
 																																															decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																															if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																															{
-																																																goto IL_8def;
+																																																goto IL_8dc5;
 																																															}
 																																															num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																															num13 = ((lzham_lzham_decompressor*)ptr)->m_match_slot;
@@ -358,12 +358,12 @@ internal static partial class decompress_9tv66f
 																																															num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																															num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																															ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																															goto IL_8f2a;
+																																															goto IL_8f00;
 																																														}
 																																														decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																														if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																														{
-																																															goto IL_8ad4;
+																																															goto IL_8aaa;
 																																														}
 																																														num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																														num13 = ((lzham_lzham_decompressor*)ptr)->m_match_slot;
@@ -378,12 +378,12 @@ internal static partial class decompress_9tv66f
 																																														num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																														num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																														ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																														goto IL_8c0f;
+																																														goto IL_8be5;
 																																													}
 																																													decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																													if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																													{
-																																														goto IL_860a;
+																																														goto IL_85e0;
 																																													}
 																																													num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																													num13 = ((lzham_lzham_decompressor*)ptr)->m_match_slot;
@@ -400,12 +400,12 @@ internal static partial class decompress_9tv66f
 																																													ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 																																													ptr5 = ((lzham_symbol_codec*)codec)->m_pSaved_huff_model;
 																																													pDecode_tables2 = ((lzham_raw_quasi_adaptive_huffman_data_model*)ptr5)->m_pDecode_tables;
-																																													goto IL_8757;
+																																													goto IL_872d;
 																																												}
 																																												decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																												if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																												{
-																																													goto IL_80b2;
+																																													goto IL_8088;
 																																												}
 																																												num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																												num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -421,12 +421,12 @@ internal static partial class decompress_9tv66f
 																																												ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 																																												ptr6 = ((lzham_symbol_codec*)codec)->m_pSaved_huff_model;
 																																												pDecode_tables3 = ((lzham_raw_quasi_adaptive_huffman_data_model*)ptr6)->m_pDecode_tables;
-																																												goto IL_81f6;
+																																												goto IL_81cc;
 																																											}
 																																											decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																											if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																											{
-																																												goto IL_7c64;
+																																												goto IL_7c3a;
 																																											}
 																																											num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																											num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -440,12 +440,12 @@ internal static partial class decompress_9tv66f
 																																											num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																											num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																											ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																											goto IL_7d96;
+																																											goto IL_7d6c;
 																																										}
 																																										decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																										if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																										{
-																																											goto IL_7862;
+																																											goto IL_7838;
 																																										}
 																																										num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																										num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -459,12 +459,12 @@ internal static partial class decompress_9tv66f
 																																										num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																										num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																										ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																										goto IL_7994;
+																																										goto IL_796a;
 																																									}
 																																									decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																									if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																									{
-																																										goto IL_74c9;
+																																										goto IL_749f;
 																																									}
 																																									num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																									num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -478,12 +478,12 @@ internal static partial class decompress_9tv66f
 																																									num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																									num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																									ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																									goto IL_75fb;
+																																									goto IL_75d1;
 																																								}
 																																								decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																								if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																								{
-																																									goto IL_71c8;
+																																									goto IL_719e;
 																																								}
 																																								num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																								num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -497,12 +497,12 @@ internal static partial class decompress_9tv66f
 																																								num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																								num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																								ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																								goto IL_72fa;
+																																								goto IL_72d0;
 																																							}
 																																							decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																							if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																							{
-																																								goto IL_6d21;
+																																								goto IL_6cf7;
 																																							}
 																																							num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																							num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -518,12 +518,12 @@ internal static partial class decompress_9tv66f
 																																							ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 																																							ptr7 = ((lzham_symbol_codec*)codec)->m_pSaved_huff_model;
 																																							pDecode_tables4 = ((lzham_raw_quasi_adaptive_huffman_data_model*)ptr7)->m_pDecode_tables;
-																																							goto IL_6e65;
+																																							goto IL_6e3b;
 																																						}
 																																						decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																						if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																						{
-																																							goto IL_6931;
+																																							goto IL_6907;
 																																						}
 																																						num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																						num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -537,12 +537,12 @@ internal static partial class decompress_9tv66f
 																																						num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																						num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																						ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																						goto IL_6a63;
+																																						goto IL_6a39;
 																																					}
 																																					decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																					if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																					{
-																																						goto IL_6630;
+																																						goto IL_6606;
 																																					}
 																																					num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																					num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -556,12 +556,12 @@ internal static partial class decompress_9tv66f
 																																					num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																					num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																					ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																					goto IL_6762;
+																																					goto IL_6738;
 																																				}
 																																				decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																				if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																				{
-																																					goto IL_6189;
+																																					goto IL_615f;
 																																				}
 																																				num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																				num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -577,12 +577,12 @@ internal static partial class decompress_9tv66f
 																																				ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 																																				ptr8 = ((lzham_symbol_codec*)codec)->m_pSaved_huff_model;
 																																				pDecode_tables5 = ((lzham_raw_quasi_adaptive_huffman_data_model*)ptr8)->m_pDecode_tables;
-																																				goto IL_62cd;
+																																				goto IL_62a3;
 																																			}
 																																			decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																			if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																			{
-																																				goto IL_5d42;
+																																				goto IL_5d18;
 																																			}
 																																			num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																			num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -596,12 +596,12 @@ internal static partial class decompress_9tv66f
 																																			num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																			goto IL_5e74;
+																																			goto IL_5e4a;
 																																		}
 																																		decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																		if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																		{
-																																			goto IL_594e;
+																																			goto IL_5924;
 																																		}
 																																		num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																		num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -615,12 +615,12 @@ internal static partial class decompress_9tv66f
 																																		num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																		num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																		ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																		goto IL_5a80;
+																																		goto IL_5a56;
 																																	}
 																																	decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																	if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																																	{
-																																		goto IL_555a;
+																																		goto IL_5530;
 																																	}
 																																	num12 = ((lzham_lzham_decompressor*)ptr)->m_match_len;
 																																	num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -634,7 +634,7 @@ internal static partial class decompress_9tv66f
 																																	num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																																	num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																																	ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																																	goto IL_568c;
+																																	goto IL_5662;
 																																}
 																																decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																																long flush_n5 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
@@ -642,12 +642,12 @@ internal static partial class decompress_9tv66f
 																																*pFlush_src3 = (byte*)(*pFlush_src3) + flush_n5;
 																																long flush_n6 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
 																																((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining -= flush_n6;
-																																goto IL_514a;
+																																goto IL_5127;
 																															}
 																															decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																															if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																															{
-																																goto IL_4c41;
+																																goto IL_4c1e;
 																															}
 																															num16 = ((lzham_lzham_decompressor*)ptr)->m_rep_lit0;
 																															num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -663,12 +663,12 @@ internal static partial class decompress_9tv66f
 																															ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 																															ptr9 = ((lzham_symbol_codec*)codec)->m_pSaved_huff_model;
 																															pDecode_tables6 = ((lzham_raw_quasi_adaptive_huffman_data_model*)ptr9)->m_pDecode_tables;
-																															goto IL_4d85;
+																															goto IL_4d62;
 																														}
 																														decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																														if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																														{
-																															goto IL_4747;
+																															goto IL_4724;
 																														}
 																														num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																														num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -683,14 +683,14 @@ internal static partial class decompress_9tv66f
 																														ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 																														ptr10 = ((lzham_symbol_codec*)codec)->m_pSaved_huff_model;
 																														pDecode_tables7 = ((lzham_raw_quasi_adaptive_huffman_data_model*)ptr10)->m_pDecode_tables;
-																														goto IL_4882;
+																														goto IL_485f;
 																													}
-																													goto IL_45ec;
+																													goto IL_45c9;
 																												}
 																												decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																												if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																												{
-																													goto IL_42a8;
+																													goto IL_4285;
 																												}
 																												num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																												num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -703,12 +703,12 @@ internal static partial class decompress_9tv66f
 																												num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																												num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																												ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																												goto IL_43d1;
+																												goto IL_43ae;
 																											}
 																											decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																											if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																											{
-																												goto IL_3f89;
+																												goto IL_3f66;
 																											}
 																											num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																											num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -721,12 +721,12 @@ internal static partial class decompress_9tv66f
 																											num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																											num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																											ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																											goto IL_40b2;
+																											goto IL_408f;
 																										}
 																										decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																										if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																										{
-																											goto IL_3ca0;
+																											goto IL_3c7d;
 																										}
 																										num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 																										num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -739,7 +739,7 @@ internal static partial class decompress_9tv66f
 																										num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																										num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																										ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																										goto IL_3dc9;
+																										goto IL_3da6;
 																									}
 																									decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																									long flush_n7 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
@@ -747,9 +747,9 @@ internal static partial class decompress_9tv66f
 																									*pFlush_src4 = (byte*)(*pFlush_src4) + flush_n7;
 																									long flush_n8 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
 																									((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining -= flush_n8;
-																									goto IL_38aa;
+																									goto IL_388e;
 																								}
-																								goto IL_370b;
+																								goto IL_36ef;
 																							}
 																							num17 = ((lzham_lzham_decompressor*)ptr)->m_num_raw_bytes_remaining;
 																							num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -761,9 +761,9 @@ internal static partial class decompress_9tv66f
 																							decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																							num18 = 0L;
 																							num19 = *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size;
-																							goto IL_3528;
+																							goto IL_3513;
 																						}
-																						goto IL_3578;
+																						goto IL_3563;
 																					}
 																					decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																					long flush_n9 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
@@ -771,14 +771,14 @@ internal static partial class decompress_9tv66f
 																					*pFlush_src5 = (byte*)(*pFlush_src5) + flush_n9;
 																					long flush_n10 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
 																					((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining -= flush_n10;
-																					goto IL_31bc;
+																					goto IL_31ae;
 																				}
-																				goto IL_3035;
+																				goto IL_3027;
 																			}
 																			decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																			if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																			{
-																				goto IL_2d61;
+																				goto IL_2d53;
 																			}
 																			num17 = ((lzham_lzham_decompressor*)ptr)->m_num_raw_bytes_remaining;
 																			num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -792,14 +792,14 @@ internal static partial class decompress_9tv66f
 																			num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																			goto IL_2e93;
+																			goto IL_2e85;
 																		}
-																		goto IL_2c2e;
+																		goto IL_2c20;
 																	}
 																	decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																	if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																	{
-																		goto IL_29ab;
+																		goto IL_299d;
 																	}
 																	num17 = ((lzham_lzham_decompressor*)ptr)->m_num_raw_bytes_remaining;
 																	num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -813,12 +813,12 @@ internal static partial class decompress_9tv66f
 																	num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																	num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																	ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																	goto IL_2add;
+																	goto IL_2acf;
 																}
 																decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 																if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 																{
-																	goto IL_26e0;
+																	goto IL_26d2;
 																}
 																num17 = ((lzham_lzham_decompressor*)ptr)->m_num_raw_bytes_remaining;
 																num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
@@ -832,7 +832,7 @@ internal static partial class decompress_9tv66f
 																num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 																num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 																ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-																goto IL_2812;
+																goto IL_2804;
 															}
 															num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 															num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -841,7 +841,7 @@ internal static partial class decompress_9tv66f
 															num6 = ((lzham_lzham_decompressor*)ptr)->m_cur_state;
 															num7 = ((lzham_lzham_decompressor*)ptr)->m_dst_ofs;
 															decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
-															goto IL_2596;
+															goto IL_2588;
 														}
 														decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 														long flush_n11 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
@@ -849,14 +849,14 @@ internal static partial class decompress_9tv66f
 														*pFlush_src6 = (byte*)(*pFlush_src6) + flush_n11;
 														long flush_n12 = ((lzham_lzham_decompressor*)ptr)->m_flush_n;
 														((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining -= flush_n12;
-														goto IL_21b6;
+														goto IL_21af;
 													}
-													goto IL_2041;
+													goto IL_203a;
 												}
 												decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 												if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 												{
-													goto IL_1dec;
+													goto IL_1de5;
 												}
 												num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 												num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -869,14 +869,14 @@ internal static partial class decompress_9tv66f
 												num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 												num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 												ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-												goto IL_1f15;
+												goto IL_1f0e;
 											}
-											goto IL_1ce3;
+											goto IL_1cdc;
 										}
 										decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 										if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 										{
-											goto IL_1a92;
+											goto IL_1a8b;
 										}
 										num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 										num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -889,12 +889,12 @@ internal static partial class decompress_9tv66f
 										num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 										num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 										ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-										goto IL_1bbb;
+										goto IL_1bb4;
 									}
 									decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 									if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 									{
-										goto IL_17ad;
+										goto IL_17a6;
 									}
 									num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 									num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -907,12 +907,12 @@ internal static partial class decompress_9tv66f
 									num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 									num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 									ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-									goto IL_18d6;
+									goto IL_18cf;
 								}
 								decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 								if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 								{
-									goto IL_14a2;
+									goto IL_149b;
 								}
 								num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 								num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -925,12 +925,12 @@ internal static partial class decompress_9tv66f
 								num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 								num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 								ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-								goto IL_15cb;
+								goto IL_15c4;
 							}
 							decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 							if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 							{
-								goto IL_11d4;
+								goto IL_11cd;
 							}
 							num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 							num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -943,12 +943,12 @@ internal static partial class decompress_9tv66f
 							num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 							num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 							ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-							goto IL_12fd;
+							goto IL_12f6;
 						}
 						decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 						if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 						{
-							goto IL_0bed;
+							goto IL_0be6;
 						}
 						num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 						num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -961,12 +961,12 @@ internal static partial class decompress_9tv66f
 						num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 						num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 						ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-						goto IL_0d06;
+						goto IL_0cff;
 					}
 					decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 					if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 					{
-						goto IL_08ed;
+						goto IL_08e6;
 					}
 					num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 					num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -979,12 +979,12 @@ internal static partial class decompress_9tv66f
 					num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 					num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 					ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-					goto IL_0a06;
+					goto IL_09ff;
 				}
 				decode_set_input_buffer.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, pBuf_next: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf);
 				if ((((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_eof & 1) != 1 && ((lzham_lzham_decompressor*)ptr)->m_codec.m_decode_buf_size == 0L)
 				{
-					goto IL_0688;
+					goto IL_0681;
 				}
 				num2 = ((lzham_lzham_decompressor*)ptr)->m_match_hist0;
 				num3 = ((lzham_lzham_decompressor*)ptr)->m_match_hist1;
@@ -997,7 +997,7 @@ internal static partial class decompress_9tv66f
 				num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 				num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 				ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-				goto IL_07a1;
+				goto IL_079a;
 			}
 			if (!start_decoding.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec, eof_flag: (((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1, buf_size: *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size, pBuf: ((lzham_lzham_decompressor*)ptr)->m_pIn_buf, pNeed_bytes_func: null, pPrivate_data: null))
 			{
@@ -1010,11 +1010,11 @@ internal static partial class decompress_9tv66f
 			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 			if ((((lzham_lzham_decompressor*)ptr)->m_params.m_decompress_flags & 4) == 0)
 			{
-				goto IL_0dfc;
+				goto IL_0df5;
 			}
-			goto IL_05c6;
+			goto IL_05bf;
 		}
-		IL_568c:
+		IL_5662:
 		int num20 = 0;
 		unchecked
 		{
@@ -1024,9 +1024,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr11 + 1;
 				num20 = (byte)(*(sbyte*)ptr11);
 			}
-			goto IL_56d4;
+			goto IL_56aa;
 		}
-		IL_ae54:
+		IL_ae1c:
 		unchecked
 		{
 			long num21 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -1035,15 +1035,15 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 1082;
 			return 2;
 		}
-		IL_2edb:
+		IL_2ecd:
 		num11 += 8;
 		int num22;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num22 << (int)(uint)checked(64 - num11));
-			goto IL_2c5f;
+			goto IL_2c51;
 		}
-		IL_10e6:
+		IL_10df:
 		int num23;
 		unchecked
 		{
@@ -1064,32 +1064,32 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_11d4;
+						goto IL_11cd;
 					}
-					goto IL_12fd;
+					goto IL_12f6;
 				}
 				void* ptr12 = ptr3;
 				ptr3 = (byte*)ptr12 + 1;
 				num23 = (byte)(*(sbyte*)ptr12);
-				goto IL_1345;
+				goto IL_133e;
 			}
 			((lzham_lzham_decompressor*)ptr)->m_block_type = (int)(num10 >>> 62);
 			num10 <<= 2;
 			num11 = checked(num11 - 2);
 			if (((lzham_lzham_decompressor*)ptr)->m_block_type == 0)
 			{
-				goto IL_13b4;
+				goto IL_13ad;
 			}
 			if (((lzham_lzham_decompressor*)ptr)->m_block_type == 2)
 			{
 				num17 = 0;
-				goto IL_25e0;
+				goto IL_25d2;
 			}
 			if (((lzham_lzham_decompressor*)ptr)->m_block_type == 1)
 			{
 				num8 = 0;
 				num9 = 0;
-				goto IL_3ba4;
+				goto IL_3b81;
 			}
 			if (((lzham_lzham_decompressor*)ptr)->m_block_type == 3)
 			{
@@ -1099,19 +1099,19 @@ internal static partial class decompress_9tv66f
 			{
 				((lzham_lzham_decompressor*)ptr)->m_status = 7;
 			}
-			goto IL_a61f;
+			goto IL_a5ee;
 		}
-		IL_a61f:
+		IL_a5ee:
 		unchecked
 		{
 			((lzham_lzham_decompressor*)ptr)->m_block_index++;
 			if (((lzham_lzham_decompressor*)ptr)->m_status == 0)
 			{
-				goto IL_10e6;
+				goto IL_10df;
 			}
 			if (uint.MaxValue != 0 || num7 == 0)
 			{
-				goto IL_aa5a;
+				goto IL_aa22;
 			}
 			int arith_value;
 			((lzham_symbol_codec*)codec)->m_arith_value = arith_value;
@@ -1144,9 +1144,9 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_seed_bytes_to_ignore_when_flushing = 0;
 			int dst_highwater_ofs;
 			((lzham_lzham_decompressor*)ptr)->m_dst_highwater_ofs = dst_highwater_ofs;
-			goto IL_a78f;
+			goto IL_a75e;
 		}
-		IL_9d59:
+		IL_9d2f:
 		void* ptr14;
 		void* ptr13 = ptr14;
 		int src_ofs;
@@ -1161,7 +1161,7 @@ internal static partial class decompress_9tv66f
 			}
 			if ((uint)num7 <= uint.MaxValue)
 			{
-				goto IL_a1ed;
+				goto IL_a1bc;
 			}
 			((lzham_symbol_codec*)codec)->m_arith_value = num8;
 			((lzham_symbol_codec*)codec)->m_arith_length = num9;
@@ -1181,9 +1181,9 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining = (uint)(num - ((lzham_lzham_decompressor*)ptr)->m_seed_bytes_to_ignore_when_flushing - ((lzham_lzham_decompressor*)ptr)->m_dst_highwater_ofs);
 			((lzham_lzham_decompressor*)ptr)->m_seed_bytes_to_ignore_when_flushing = 0;
 			((lzham_lzham_decompressor*)ptr)->m_dst_highwater_ofs = num & -1;
-			goto IL_9f04;
+			goto IL_9eda;
 		}
-		IL_2d61:
+		IL_2d53:
 		unchecked
 		{
 			long num24 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -1192,7 +1192,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 536;
 			return 2;
 		}
-		IL_07a1:
+		IL_079a:
 		int num25 = 0;
 		unchecked
 		{
@@ -1202,24 +1202,24 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr15 + 1;
 				num25 = (byte)(*(sbyte*)ptr15);
 			}
-			goto IL_07da;
+			goto IL_07d3;
 		}
-		IL_5ac8:
+		IL_5a9e:
 		num11 += 8;
 		int num26;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num26 << (int)(uint)checked(64 - num11));
-			goto IL_584f;
+			goto IL_5825;
 		}
-		IL_07da:
+		IL_07d3:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num25 << (int)(uint)checked(64 - num11));
-			goto IL_05c6;
+			goto IL_05bf;
 		}
-		IL_05c6:
+		IL_05bf:
 		unchecked
 		{
 			if (num11 < 8)
@@ -1239,21 +1239,21 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_0688;
+						goto IL_0681;
 					}
-					goto IL_07a1;
+					goto IL_079a;
 				}
 				void* ptr16 = ptr3;
 				ptr3 = (byte*)ptr16 + 1;
 				num25 = (byte)(*(sbyte*)ptr16);
-				goto IL_07da;
+				goto IL_07d3;
 			}
 			((lzham_lzham_decompressor*)ptr)->m_z_cmf = (int)(num10 >>> 56);
 			num10 <<= 8;
 		}
 		num11 -= 8;
-		goto IL_082b;
-		IL_8f2a:
+		goto IL_0824;
+		IL_8f00:
 		int num27 = 0;
 		unchecked
 		{
@@ -1263,9 +1263,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr17 + 1;
 				num27 = (byte)(*(sbyte*)ptr17);
 			}
-			goto IL_8f72;
+			goto IL_8f48;
 		}
-		IL_9f04:
+		IL_9eda:
 		unchecked
 		{
 			if (((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining != 0L)
@@ -1307,9 +1307,9 @@ internal static partial class decompress_9tv66f
 			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 			num7 = 0;
-			goto IL_a1ed;
+			goto IL_a1bc;
 		}
-		IL_70c9:
+		IL_709f:
 		int num32;
 		unchecked
 		{
@@ -1326,7 +1326,7 @@ internal static partial class decompress_9tv66f
 						continue;
 					}
 				}
-				goto IL_73b5;
+				goto IL_738b;
 			}
 			if (ptr3 == ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 			{
@@ -1344,16 +1344,16 @@ internal static partial class decompress_9tv66f
 					((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 					((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 					((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-					goto IL_71c8;
+					goto IL_719e;
 				}
-				goto IL_72fa;
+				goto IL_72d0;
 			}
 			void* ptr18 = ptr3;
 			ptr3 = (byte*)ptr18 + 1;
 			num32 = (byte)(*(sbyte*)ptr18);
-			goto IL_7342;
+			goto IL_7318;
 		}
-		IL_2f60:
+		IL_2f52:
 		int num33 = -1;
 		if (num11 >= 8)
 		{
@@ -1363,7 +1363,7 @@ internal static partial class decompress_9tv66f
 		}
 		if (num33 < 0)
 		{
-			goto IL_34aa;
+			goto IL_3495;
 		}
 		unchecked
 		{
@@ -1377,12 +1377,12 @@ internal static partial class decompress_9tv66f
 				long num34 = decode_get_bytes_consumed.Invoke(codec);
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num34;
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
-				goto IL_3035;
+				goto IL_3027;
 			}
 			((sbyte*)pOut_buf)[(uint)num7++] = (sbyte)num33;
 			if (uint.MaxValue != 0 || (uint)num7 <= uint.MaxValue)
 			{
-				goto IL_3493;
+				goto IL_347e;
 			}
 			int arith_value2;
 			((lzham_symbol_codec*)codec)->m_arith_value = arith_value2;
@@ -1417,9 +1417,9 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_seed_bytes_to_ignore_when_flushing = 0;
 			int dst_highwater_ofs2;
 			((lzham_lzham_decompressor*)ptr)->m_dst_highwater_ofs = dst_highwater_ofs2;
-			goto IL_31bc;
+			goto IL_31ae;
 		}
-		IL_6a63:
+		IL_6a39:
 		int num35 = 0;
 		unchecked
 		{
@@ -1429,9 +1429,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr19 + 1;
 				num35 = (byte)(*(sbyte*)ptr19);
 			}
-			goto IL_6aab;
+			goto IL_6a81;
 		}
-		IL_0688:
+		IL_0681:
 		unchecked
 		{
 			long num36 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -1440,15 +1440,15 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 369;
 			return 2;
 		}
-		IL_5ebc:
+		IL_5e92:
 		num11 += 8;
 		int num37;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num37 << (int)(uint)checked(64 - num11));
-			goto IL_5c43;
+			goto IL_5c19;
 		}
-		IL_96ff:
+		IL_96d5:
 		int num38;
 		unchecked
 		{
@@ -1460,15 +1460,15 @@ internal static partial class decompress_9tv66f
 				if (ptr3 >= ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
 					ptr3 = (byte*)ptr3 + -4;
-					goto IL_9749;
+					goto IL_971f;
 				}
 				num38 = ((byte)((sbyte*)ptr3)[-4] << 24) | (((byte*)ptr3 + -4)[1] << 16) | (((byte*)ptr3 + -4)[2] << 8) | ((byte*)ptr3 + -4)[3];
 				num11 = checked(num11 + 32);
 				num10 |= (long)((ulong)(uint)num38 << (int)(uint)checked(64 - num11));
 			}
-			goto IL_9a80;
+			goto IL_9a56;
 		}
-		IL_9087:
+		IL_905d:
 		int num39;
 		unchecked
 		{
@@ -1492,24 +1492,24 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_91a9;
+						goto IL_917f;
 					}
-					goto IL_92ed;
+					goto IL_92c3;
 				}
 				void* ptr20 = ptr3;
 				ptr3 = (byte*)ptr20 + 1;
 				num39 = (byte)(*(sbyte*)ptr20);
-				goto IL_9335;
+				goto IL_930b;
 			}
 			num14 = (int)((num15 != 0) ? (num10 >>> (int)(uint)(64 - num15)) : 0);
 			num10 <<= (int)(uint)num15;
 			num11 -= num15;
-			goto IL_9c18;
+			goto IL_9bee;
 		}
-		IL_9749:
+		IL_971f:
 		if (num11 >= 24)
 		{
-			goto IL_9a80;
+			goto IL_9a56;
 		}
 		unchecked
 		{
@@ -1530,11 +1530,11 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 				((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 				((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-				goto IL_986a;
+				goto IL_9840;
 			}
-			goto IL_99c0;
+			goto IL_9996;
 		}
-		IL_0a06:
+		IL_09ff:
 		int num40 = 0;
 		unchecked
 		{
@@ -1544,9 +1544,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr21 + 1;
 				num40 = (byte)(*(sbyte*)ptr21);
 			}
-			goto IL_0a3f;
+			goto IL_0a38;
 		}
-		IL_582c:
+		IL_5802:
 		void* ptr22;
 		void* ptr23;
 		int num45;
@@ -1555,7 +1555,7 @@ internal static partial class decompress_9tv66f
 			if ((uint)num9 < 16777216u)
 			{
 				((lzham_symbol_codec*)codec)->m_pSaved_model = ptr22;
-				goto IL_584f;
+				goto IL_5825;
 			}
 			int num41 = (ushort)((lzham_adaptive_bit_model*)ptr22)->m_bit_0_prob * (num9 >>> 11);
 			int num42 = (((uint)num8 >= (uint)num41) ? 1 : 0);
@@ -1577,7 +1577,7 @@ internal static partial class decompress_9tv66f
 			if (num42 != 0)
 			{
 				ptr23 = (byte*)(&((lzham_lzham_decompressor*)ptr)->m_is_rep0_single_byte_model) + (nint)(uint)num6 * (nint)sizeof(lzham_adaptive_bit_model);
-				goto IL_5c20;
+				goto IL_5bf6;
 			}
 			ptr7 = (byte*)(&((lzham_lzham_decompressor*)ptr)->m_rep_len_table) + (((uint)num6 >= 7u) ? ((nint)1) : ((nint)0)) * (nint)sizeof(lzham_quasi_adaptive_huffman_data_model);
 			pDecode_tables4 = ((lzham_raw_quasi_adaptive_huffman_data_model*)((byte*)(&((lzham_lzham_decompressor*)ptr)->m_rep_len_table) + (((uint)num6 >= 7u) ? ((nint)1) : ((nint)0)) * (nint)sizeof(lzham_quasi_adaptive_huffman_data_model)))->m_pDecode_tables;
@@ -1587,22 +1587,22 @@ internal static partial class decompress_9tv66f
 				if (ptr3 >= ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
 					ptr3 = (byte*)ptr3 + -4;
-					goto IL_6c22;
+					goto IL_6bf8;
 				}
 				num45 = ((byte)((sbyte*)ptr3)[-4] << 24) | (((byte*)ptr3 + -4)[1] << 16) | (((byte*)ptr3 + -4)[2] << 8) | ((byte*)ptr3 + -4)[3];
 				num11 = checked(num11 + 32);
 				num10 |= (long)((ulong)(uint)num45 << (int)(uint)checked(64 - num11));
 			}
-			goto IL_6f25;
+			goto IL_6efb;
 		}
-		IL_0a3f:
+		IL_0a38:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num40 << (int)(uint)checked(64 - num11));
-			goto IL_082b;
+			goto IL_0824;
 		}
-		IL_082b:
+		IL_0824:
 		unchecked
 		{
 			if (num11 < 8)
@@ -1622,14 +1622,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_08ed;
+						goto IL_08e6;
 					}
-					goto IL_0a06;
+					goto IL_09ff;
 				}
 				void* ptr24 = ptr3;
 				ptr3 = (byte*)ptr24 + 1;
 				num40 = (byte)(*(sbyte*)ptr24);
-				goto IL_0a3f;
+				goto IL_0a38;
 			}
 			((lzham_lzham_decompressor*)ptr)->m_z_flg = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -1640,7 +1640,7 @@ internal static partial class decompress_9tv66f
 			}
 			if ((((lzham_lzham_decompressor*)ptr)->m_z_flg & 0x20) == 0)
 			{
-				goto IL_0dfc;
+				goto IL_0df5;
 			}
 			if (((lzham_lzham_decompressor*)ptr)->m_params.m_pSeed_bytes == null || uint.MaxValue != 0)
 			{
@@ -1648,9 +1648,9 @@ internal static partial class decompress_9tv66f
 			}
 			((lzham_lzham_decompressor*)ptr)->m_z_dict_adler32 = 0;
 			((lzham_lzham_decompressor*)ptr)->m_tmp = 0;
-			goto IL_0b18;
+			goto IL_0b11;
 		}
-		IL_91a9:
+		IL_917f:
 		unchecked
 		{
 			long num46 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -1659,7 +1659,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 929;
 			return 2;
 		}
-		IL_962d:
+		IL_9603:
 		int num47 = 0;
 		unchecked
 		{
@@ -1669,9 +1669,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr25 + 1;
 				num47 = (byte)(*(sbyte*)ptr25);
 			}
-			goto IL_9675;
+			goto IL_964b;
 		}
-		IL_92ed:
+		IL_92c3:
 		num39 = 0;
 		unchecked
 		{
@@ -1681,12 +1681,12 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr26 + 1;
 				num39 = (byte)(*(sbyte*)ptr26);
 			}
-			goto IL_9335;
+			goto IL_930b;
 		}
-		IL_4b42:
+		IL_4b1f:
 		if (num11 >= 24)
 		{
-			goto IL_4e45;
+			goto IL_4e22;
 		}
 		unchecked
 		{
@@ -1705,14 +1705,14 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 				((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 				((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-				goto IL_4c41;
+				goto IL_4c1e;
 			}
-			goto IL_4d85;
+			goto IL_4d62;
 		}
-		IL_7f45:
+		IL_7f1b:
 		num6 = InstructionHelper.Select(unchecked((uint)num6) < 7u, 8, 11);
-		goto IL_9c66;
-		IL_5e74:
+		goto IL_9c3c;
+		IL_5e4a:
 		num37 = 0;
 		unchecked
 		{
@@ -1722,12 +1722,12 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr27 + 1;
 				num37 = (byte)(*(sbyte*)ptr27);
 			}
-			goto IL_5ebc;
+			goto IL_5e92;
 		}
-		IL_3035:
+		IL_3027:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 551;
 		return 5;
-		IL_93c5:
+		IL_939b:
 		unchecked
 		{
 			if (num11 < num15 - 4)
@@ -1750,30 +1750,30 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_94e9;
+						goto IL_94bf;
 					}
-					goto IL_962d;
+					goto IL_9603;
 				}
 				void* ptr28 = ptr3;
 				ptr3 = (byte*)ptr28 + 1;
 				num47 = (byte)(*(sbyte*)ptr28);
-				goto IL_9675;
+				goto IL_964b;
 			}
 			num14 = (int)((num15 - 4 != 0) ? (num10 >>> (int)(uint)(64 - (num15 - 4))) : 0);
 			num10 <<= (int)(uint)(num15 - 4);
 			num11 -= num15 - 4;
 			num14 <<= 4;
-			goto IL_96ff;
+			goto IL_96d5;
 		}
-		IL_79dc:
+		IL_79b2:
 		num11 += 8;
 		int num48;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num48 << (int)(uint)checked(64 - num11));
-			goto IL_7763;
+			goto IL_7739;
 		}
-		IL_81f6:
+		IL_81cc:
 		int num49 = 0;
 		unchecked
 		{
@@ -1785,9 +1785,9 @@ internal static partial class decompress_9tv66f
 			}
 			num11 = checked(num11 + 8);
 			num10 |= (long)((ulong)(uint)num49 << (int)(uint)checked(64 - num11));
-			goto IL_7fb3;
+			goto IL_7f89;
 		}
-		IL_b23c:
+		IL_b204:
 		int num50 = 0;
 		unchecked
 		{
@@ -1797,9 +1797,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr30 + 1;
 				num50 = (byte)(*(sbyte*)ptr30);
 			}
-			goto IL_b284;
+			goto IL_b24c;
 		}
-		IL_31bc:
+		IL_31ae:
 		unchecked
 		{
 			if (((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining != 0L)
@@ -1839,9 +1839,9 @@ internal static partial class decompress_9tv66f
 			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 			num7 = 0;
-			goto IL_3493;
+			goto IL_347e;
 		}
-		IL_08ed:
+		IL_08e6:
 		unchecked
 		{
 			long num54 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -1850,15 +1850,15 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 370;
 			return 2;
 		}
-		IL_40fa:
+		IL_40d7:
 		num11 += 8;
 		int num55;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num55 << (int)(uint)checked(64 - num11));
-			goto IL_3e9b;
+			goto IL_3e78;
 		}
-		IL_3dc9:
+		IL_3da6:
 		int num56 = 0;
 		unchecked
 		{
@@ -1868,9 +1868,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr31 + 1;
 				num56 = (byte)(*(sbyte*)ptr31);
 			}
-			goto IL_3e11;
+			goto IL_3dee;
 		}
-		IL_2e93:
+		IL_2e85:
 		num22 = 0;
 		unchecked
 		{
@@ -1880,9 +1880,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr32 + 1;
 				num22 = (byte)(*(sbyte*)ptr32);
 			}
-			goto IL_2edb;
+			goto IL_2ecd;
 		}
-		IL_5d42:
+		IL_5d18:
 		unchecked
 		{
 			long num57 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -1891,7 +1891,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 780;
 			return 2;
 		}
-		IL_0d06:
+		IL_0cff:
 		int num58 = 0;
 		unchecked
 		{
@@ -1901,9 +1901,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr33 + 1;
 				num58 = (byte)(*(sbyte*)ptr33);
 			}
-			goto IL_0d42;
+			goto IL_0d3b;
 		}
-		IL_aa7e:
+		IL_aa46:
 		int num59;
 		unchecked
 		{
@@ -1924,14 +1924,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_ab6f;
+						goto IL_ab37;
 					}
-					goto IL_ac98;
+					goto IL_ac60;
 				}
 				void* ptr34 = ptr3;
 				ptr3 = (byte*)ptr34 + 1;
 				num59 = (byte)(*(sbyte*)ptr34);
-				goto IL_ace0;
+				goto IL_aca8;
 			}
 			if ((num11 & 7) != 0)
 			{
@@ -1940,15 +1940,15 @@ internal static partial class decompress_9tv66f
 			num10 <<= (int)(uint)(num11 & 7);
 		}
 		num11 -= num11 & 7;
-		goto IL_ad65;
-		IL_0d42:
+		goto IL_ad2d;
+		IL_0d3b:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num58 << (int)(uint)checked(64 - num11));
-			goto IL_0b2b;
+			goto IL_0b24;
 		}
-		IL_0b2b:
+		IL_0b24:
 		unchecked
 		{
 			if (num11 < 8)
@@ -1968,23 +1968,23 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_0bed;
+						goto IL_0be6;
 					}
-					goto IL_0d06;
+					goto IL_0cff;
 				}
 				void* ptr35 = ptr3;
 				ptr3 = (byte*)ptr35 + 1;
 				num58 = (byte)(*(sbyte*)ptr35);
-				goto IL_0d42;
+				goto IL_0d3b;
 			}
 			int num60 = (int)(num10 >>> 56);
 			num10 <<= 8;
 			num11 = checked(num11 - 8);
 			((lzham_lzham_decompressor*)ptr)->m_z_dict_adler32 = (((lzham_lzham_decompressor*)ptr)->m_z_dict_adler32 << 8) | num60;
 			((lzham_lzham_decompressor*)ptr)->m_tmp++;
-			goto IL_0b18;
+			goto IL_0b11;
 		}
-		IL_1a92:
+		IL_1a8b:
 		unchecked
 		{
 			long num61 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -1993,7 +1993,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 447;
 			return 2;
 		}
-		IL_74c9:
+		IL_749f:
 		unchecked
 		{
 			long num62 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -2002,14 +2002,14 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 824;
 			return 2;
 		}
-		IL_ace0:
+		IL_aca8:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num59 << (int)(uint)checked(64 - num11));
-			goto IL_aa7e;
+			goto IL_aa46;
 		}
-		IL_ac98:
+		IL_ac60:
 		num59 = 0;
 		unchecked
 		{
@@ -2019,9 +2019,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr36 + 1;
 				num59 = (byte)(*(sbyte*)ptr36);
 			}
-			goto IL_ace0;
+			goto IL_aca8;
 		}
-		IL_42a8:
+		IL_4285:
 		unchecked
 		{
 			long num63 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -2030,34 +2030,34 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 682;
 			return 2;
 		}
-		IL_0b18:
+		IL_0b11:
 		unchecked
 		{
 			if ((uint)((lzham_lzham_decompressor*)ptr)->m_tmp < 4u)
 			{
-				goto IL_0b2b;
+				goto IL_0b24;
 			}
 			if (adler32.Invoke(buflen: (uint)((lzham_lzham_decompressor*)ptr)->m_params.m_num_seed_bytes, pBuf: ((lzham_lzham_decompressor*)ptr)->m_params.m_pSeed_bytes, adler32: 1) == ((lzham_lzham_decompressor*)ptr)->m_z_dict_adler32)
 			{
-				goto IL_0dfc;
+				goto IL_0df5;
 			}
 			return 13;
 		}
-		IL_9335:
+		IL_930b:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num39 << (int)(uint)checked(64 - num11));
-			goto IL_9087;
+			goto IL_905d;
 		}
-		IL_a1ed:
+		IL_a1bc:
 		num12 = unchecked(num12 + -1);
 		if (num12 == 0)
 		{
-			goto IL_417b;
+			goto IL_4158;
 		}
-		goto IL_9d59;
-		IL_0dfc:
+		goto IL_9d2f;
+		IL_0df5:
 		unchecked
 		{
 			int num64 = ((lzham_lzham_decompressor*)ptr)->m_params.m_table_max_update_interval;
@@ -2180,9 +2180,9 @@ internal static partial class decompress_9tv66f
 			{
 				return 4;
 			}
-			goto IL_10e6;
+			goto IL_10df;
 		}
-		IL_b024:
+		IL_afec:
 		unchecked
 		{
 			if (num11 < 16)
@@ -2202,14 +2202,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_b113;
+						goto IL_b0db;
 					}
-					goto IL_b23c;
+					goto IL_b204;
 				}
 				void* ptr37 = ptr3;
 				ptr3 = (byte*)ptr37 + 1;
 				num50 = (byte)(*(sbyte*)ptr37);
-				goto IL_b284;
+				goto IL_b24c;
 			}
 			int num74 = (int)(num10 >>> 48);
 			num10 <<= 16;
@@ -2227,17 +2227,17 @@ internal static partial class decompress_9tv66f
 			{
 				((lzham_lzham_decompressor*)ptr)->m_decomp_adler32 = ((lzham_lzham_decompressor*)ptr)->m_file_src_file_adler32;
 			}
-			goto IL_b368;
+			goto IL_b330;
 		}
-		IL_7643:
+		IL_7619:
 		num11 += 8;
 		int num75;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num75 << (int)(uint)checked(64 - num11));
-			goto IL_73b5;
+			goto IL_738b;
 		}
-		IL_1bbb:
+		IL_1bb4:
 		int num76 = 0;
 		unchecked
 		{
@@ -2247,16 +2247,16 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr38 + 1;
 				num76 = (byte)(*(sbyte*)ptr38);
 			}
-			goto IL_1c03;
+			goto IL_1bfc;
 		}
-		IL_b284:
+		IL_b24c:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num50 << (int)(uint)checked(64 - num11));
-			goto IL_b024;
+			goto IL_afec;
 		}
-		IL_6531:
+		IL_6507:
 		int num78;
 		unchecked
 		{
@@ -2273,7 +2273,7 @@ internal static partial class decompress_9tv66f
 						continue;
 					}
 				}
-				goto IL_681d;
+				goto IL_67f3;
 			}
 			if (ptr3 == ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 			{
@@ -2291,23 +2291,23 @@ internal static partial class decompress_9tv66f
 					((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 					((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 					((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-					goto IL_6630;
+					goto IL_6606;
 				}
-				goto IL_6762;
+				goto IL_6738;
 			}
 			void* ptr39 = ptr3;
 			ptr3 = (byte*)ptr39 + 1;
 			num78 = (byte)(*(sbyte*)ptr39);
-			goto IL_67aa;
+			goto IL_6780;
 		}
-		IL_3493:
+		IL_347e:
 		num17 = unchecked(num17 + -1);
 		if (num17 != 0)
 		{
-			goto IL_2f60;
+			goto IL_2f52;
 		}
-		goto IL_34aa;
-		IL_8c0f:
+		goto IL_3495;
+		IL_8be5:
 		int num79 = 0;
 		unchecked
 		{
@@ -2317,25 +2317,25 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr40 + 1;
 				num79 = (byte)(*(sbyte*)ptr40);
 			}
-			goto IL_8c57;
+			goto IL_8c2d;
 		}
-		IL_9059:
+		IL_902f:
 		unchecked
 		{
 			_ = &((lzham_lzham_decompressor*)ptr)->m_lzBase;
 			num15 = (byte)((sbyte*)m_lzx_position_extra_bits.Pointer)[(uint)num13];
 			if ((uint)num15 < 3u)
 			{
-				goto IL_9087;
+				goto IL_905d;
 			}
 			num14 = 0;
 			if ((uint)num15 <= 4u)
 			{
-				goto IL_96ff;
+				goto IL_96d5;
 			}
-			goto IL_93c5;
+			goto IL_939b;
 		}
-		IL_3528:
+		IL_3513:
 		unchecked
 		{
 			if ((((num19 != 0L) ? 1u : 0u) ^ 0xFFFFFFFFu) != 0)
@@ -2344,7 +2344,7 @@ internal static partial class decompress_9tv66f
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
 				if ((((lzham_lzham_decompressor*)ptr)->m_no_more_input_bytes_flag & 1) == 1)
 				{
-					goto IL_3578;
+					goto IL_3563;
 				}
 				((lzham_lzham_decompressor*)ptr)->m_num_raw_bytes_remaining = num17;
 				((lzham_lzham_decompressor*)ptr)->m_match_hist0 = num2;
@@ -2361,7 +2361,7 @@ internal static partial class decompress_9tv66f
 			{
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num18;
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
-				goto IL_370b;
+				goto IL_36ef;
 			}
 			llvm_memcpy_p0_p0_i64.Invoke((byte*)pOut_buf + (uint)num7, (byte*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf + num18, (uint)num80, isVolatile: false);
 			num18 += (uint)num80;
@@ -2370,7 +2370,7 @@ internal static partial class decompress_9tv66f
 			num7 += num80;
 			if (uint.MaxValue != 0 || (uint)num7 <= uint.MaxValue)
 			{
-				goto IL_3501;
+				goto IL_34ec;
 			}
 			int num_raw_bytes_remaining2;
 			((lzham_lzham_decompressor*)ptr)->m_num_raw_bytes_remaining = num_raw_bytes_remaining2;
@@ -2395,25 +2395,25 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_seed_bytes_to_ignore_when_flushing = 0;
 			int dst_highwater_ofs3;
 			((lzham_lzham_decompressor*)ptr)->m_dst_highwater_ofs = dst_highwater_ofs3;
-			goto IL_38aa;
+			goto IL_388e;
 		}
-		IL_3501:
+		IL_34ec:
 		unchecked
 		{
 			if (num17 != 0)
 			{
 				num18 = decode_get_bytes_consumed.Invoke(codec);
 				num19 = *(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size - num18;
-				goto IL_3528;
+				goto IL_3513;
 			}
 			num8 = ((lzham_symbol_codec*)codec)->m_arith_value;
 			num9 = ((lzham_symbol_codec*)codec)->m_arith_length;
 			num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-			goto IL_a61f;
+			goto IL_a5ee;
 		}
-		IL_34aa:
+		IL_3495:
 		unchecked
 		{
 			((lzham_symbol_codec*)codec)->m_arith_value = num8;
@@ -2421,9 +2421,9 @@ internal static partial class decompress_9tv66f
 			((lzham_symbol_codec*)codec)->m_bit_buf = num10;
 			((lzham_symbol_codec*)codec)->m_bit_count = num11;
 			((lzham_symbol_codec*)codec)->m_pDecode_buf_next = ptr3;
-			goto IL_3501;
+			goto IL_34ec;
 		}
-		IL_af7d:
+		IL_af45:
 		int num81 = 0;
 		unchecked
 		{
@@ -2433,9 +2433,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr41 + 1;
 				num81 = (byte)(*(sbyte*)ptr41);
 			}
-			goto IL_afc5;
+			goto IL_af8d;
 		}
-		IL_a401:
+		IL_a3d0:
 		unchecked
 		{
 			long num82 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -2444,7 +2444,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 1054;
 			return 2;
 		}
-		IL_8def:
+		IL_8dc5:
 		unchecked
 		{
 			long num83 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -2453,7 +2453,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 912;
 			return 2;
 		}
-		IL_8757:
+		IL_872d:
 		int num84 = 0;
 		unchecked
 		{
@@ -2465,15 +2465,15 @@ internal static partial class decompress_9tv66f
 			}
 			num11 = checked(num11 + 8);
 			num10 |= (long)((ulong)(uint)num84 << (int)(uint)checked(64 - num11));
-			goto IL_84fa;
+			goto IL_84d0;
 		}
-		IL_3578:
+		IL_3563:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 584;
 		return 6;
-		IL_370b:
+		IL_36ef:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 608;
 		return 5;
-		IL_681d:
+		IL_67f3:
 		int num85;
 		unchecked
 		{
@@ -2495,36 +2495,36 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_6931;
+						goto IL_6907;
 					}
-					goto IL_6a63;
+					goto IL_6a39;
 				}
 				void* ptr43 = ptr3;
 				ptr3 = (byte*)ptr43 + 1;
 				num35 = (byte)(*(sbyte*)ptr43);
-				goto IL_6aab;
+				goto IL_6a81;
 			}
 			num85 = (int)(((bool*)s_huge_match_code_len.Pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]))) : 0);
 			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12];
 		}
 		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]);
 		num12 = unchecked(((int*)s_huge_match_base_len.Pointer)[(uint)num12] + num85);
-		goto IL_6b90;
-		IL_67aa:
+		goto IL_6b66;
+		IL_6780:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num78 << (int)(uint)checked(64 - num11));
-			goto IL_6531;
+			goto IL_6507;
 		}
-		IL_8f72:
+		IL_8f48:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num27 << (int)(uint)checked(64 - num11));
-			goto IL_8cca;
+			goto IL_8ca0;
 		}
-		IL_6762:
+		IL_6738:
 		num78 = 0;
 		unchecked
 		{
@@ -2534,9 +2534,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr44 + 1;
 				num78 = (byte)(*(sbyte*)ptr44);
 			}
-			goto IL_67aa;
+			goto IL_6780;
 		}
-		IL_ad65:
+		IL_ad2d:
 		unchecked
 		{
 			if (num11 < 16)
@@ -2556,21 +2556,21 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_ae54;
+						goto IL_ae1c;
 					}
-					goto IL_af7d;
+					goto IL_af45;
 				}
 				void* ptr45 = ptr3;
 				ptr3 = (byte*)ptr45 + 1;
 				num81 = (byte)(*(sbyte*)ptr45);
-				goto IL_afc5;
+				goto IL_af8d;
 			}
 			((lzham_lzham_decompressor*)ptr)->m_file_src_file_adler32 = (int)(num10 >>> 48);
 			num10 <<= 16;
 		}
 		num11 -= 16;
-		goto IL_b024;
-		IL_4197:
+		goto IL_afec;
+		IL_4174:
 		void* ptr46;
 		void* ptr47;
 		int num92;
@@ -2580,7 +2580,7 @@ internal static partial class decompress_9tv66f
 			if ((uint)num9 < 16777216u)
 			{
 				((lzham_symbol_codec*)codec)->m_pSaved_model = ptr46;
-				goto IL_41ba;
+				goto IL_4197;
 			}
 			int num86 = (ushort)((lzham_adaptive_bit_model*)ptr46)->m_bit_0_prob * (num9 >>> 11);
 			int num87 = (((uint)num8 >= (uint)num86) ? 1 : 0);
@@ -2611,7 +2611,7 @@ internal static partial class decompress_9tv66f
 					long num90 = decode_get_bytes_consumed.Invoke(codec);
 					*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num90;
 					*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
-					goto IL_45ec;
+					goto IL_45c9;
 				}
 				if ((uint)num6 < 7u)
 				{
@@ -2623,13 +2623,13 @@ internal static partial class decompress_9tv66f
 						if (ptr3 >= ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 						{
 							ptr3 = (byte*)ptr3 + -4;
-							goto IL_4659;
+							goto IL_4636;
 						}
 						num91 = ((byte)((sbyte*)ptr3)[-4] << 24) | (((byte*)ptr3 + -4)[1] << 16) | (((byte*)ptr3 + -4)[2] << 8) | ((byte*)ptr3 + -4)[3];
 						num11 = checked(num11 + 32);
 						num10 |= (long)((ulong)(uint)num91 << (int)(uint)checked(64 - num11));
 					}
-					goto IL_4942;
+					goto IL_491f;
 				}
 				num16 = (byte)((sbyte*)pOut_buf)[(uint)((num7 - num2) & -1)];
 				ptr9 = &((lzham_lzham_decompressor*)ptr)->m_delta_lit_table;
@@ -2640,19 +2640,19 @@ internal static partial class decompress_9tv66f
 					if (ptr3 >= ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 					{
 						ptr3 = (byte*)ptr3 + -4;
-						goto IL_4b42;
+						goto IL_4b1f;
 					}
 					num92 = ((byte)((sbyte*)ptr3)[-4] << 24) | (((byte*)ptr3 + -4)[1] << 16) | (((byte*)ptr3 + -4)[2] << 8) | ((byte*)ptr3 + -4)[3];
 					num11 = checked(num11 + 32);
 					num10 |= (long)((ulong)(uint)num92 << (int)(uint)checked(64 - num11));
 				}
-				goto IL_4e45;
+				goto IL_4e22;
 			}
 			num12 = 1;
 			ptr47 = (byte*)(&((lzham_lzham_decompressor*)ptr)->m_is_rep_model) + (nint)(uint)num6 * (nint)sizeof(lzham_adaptive_bit_model);
-			goto IL_5438;
+			goto IL_540e;
 		}
-		IL_7740:
+		IL_7716:
 		void* ptr48;
 		void* ptr49;
 		unchecked
@@ -2660,7 +2660,7 @@ internal static partial class decompress_9tv66f
 			if ((uint)num9 < 16777216u)
 			{
 				((lzham_symbol_codec*)codec)->m_pSaved_model = ptr48;
-				goto IL_7763;
+				goto IL_7739;
 			}
 			int num93 = (ushort)((lzham_adaptive_bit_model*)ptr48)->m_bit_0_prob * (num9 >>> 11);
 			int num94 = (((uint)num8 >= (uint)num93) ? 1 : 0);
@@ -2684,12 +2684,12 @@ internal static partial class decompress_9tv66f
 				int num97 = num3;
 				num3 = num2;
 				num2 = num97;
-				goto IL_7f45;
+				goto IL_7f1b;
 			}
 			ptr49 = (byte*)(&((lzham_lzham_decompressor*)ptr)->m_is_rep2_model) + (nint)(uint)num6 * (nint)sizeof(lzham_adaptive_bit_model);
-			goto IL_7b42;
+			goto IL_7b18;
 		}
-		IL_38aa:
+		IL_388e:
 		unchecked
 		{
 			if (((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining != 0L)
@@ -2724,9 +2724,9 @@ internal static partial class decompress_9tv66f
 			num6 = ((lzham_lzham_decompressor*)ptr)->m_cur_state;
 			_ = ((lzham_lzham_decompressor*)ptr)->m_dst_ofs;
 			num7 = 0;
-			goto IL_3501;
+			goto IL_34ec;
 		}
-		IL_584f:
+		IL_5825:
 		unchecked
 		{
 			if (num11 < 8)
@@ -2747,14 +2747,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_594e;
+						goto IL_5924;
 					}
-					goto IL_5a80;
+					goto IL_5a56;
 				}
 				void* ptr50 = ptr3;
 				ptr3 = (byte*)ptr50 + 1;
 				num26 = (byte)(*(sbyte*)ptr50);
-				goto IL_5ac8;
+				goto IL_5a9e;
 			}
 			int num101 = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -2762,9 +2762,9 @@ internal static partial class decompress_9tv66f
 			ptr22 = ((lzham_symbol_codec*)codec)->m_pSaved_model;
 			num8 = (num8 << 8) | num101;
 			num9 <<= 8;
-			goto IL_582c;
+			goto IL_5802;
 		}
-		IL_41ba:
+		IL_4197:
 		int num102;
 		unchecked
 		{
@@ -2785,14 +2785,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_42a8;
+						goto IL_4285;
 					}
-					goto IL_43d1;
+					goto IL_43ae;
 				}
 				void* ptr51 = ptr3;
 				ptr3 = (byte*)ptr51 + 1;
 				num102 = (byte)(*(sbyte*)ptr51);
-				goto IL_4419;
+				goto IL_43f6;
 			}
 			int num103 = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -2800,9 +2800,9 @@ internal static partial class decompress_9tv66f
 			ptr46 = ((lzham_symbol_codec*)codec)->m_pSaved_model;
 			num8 = (num8 << 8) | num103;
 			num9 <<= 8;
-			goto IL_4197;
+			goto IL_4174;
 		}
-		IL_ab6f:
+		IL_ab37:
 		unchecked
 		{
 			long num104 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -2811,7 +2811,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 1080;
 			return 2;
 		}
-		IL_99c0:
+		IL_9996:
 		num38 = 0;
 		unchecked
 		{
@@ -2823,9 +2823,9 @@ internal static partial class decompress_9tv66f
 			}
 			num11 = checked(num11 + 8);
 			num10 |= (long)((ulong)(uint)num38 << (int)(uint)checked(64 - num11));
-			goto IL_9749;
+			goto IL_971f;
 		}
-		IL_43d1:
+		IL_43ae:
 		num102 = 0;
 		unchecked
 		{
@@ -2835,19 +2835,19 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr53 + 1;
 				num102 = (byte)(*(sbyte*)ptr53);
 			}
-			goto IL_4419;
+			goto IL_43f6;
 		}
-		IL_aa5a:
+		IL_aa22:
 		if (unchecked((lzham_lzham_decompressor*)ptr)->m_status != 3)
 		{
-			goto IL_b368;
+			goto IL_b330;
 		}
 		if ((num11 & 7) == 0)
 		{
-			goto IL_ad65;
+			goto IL_ad2d;
 		}
-		goto IL_aa7e;
-		IL_19a3:
+		goto IL_aa46;
+		IL_199c:
 		unchecked
 		{
 			if (num11 < 16)
@@ -2867,21 +2867,21 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_1a92;
+						goto IL_1a8b;
 					}
-					goto IL_1bbb;
+					goto IL_1bb4;
 				}
 				void* ptr54 = ptr3;
 				ptr3 = (byte*)ptr54 + 1;
 				num76 = (byte)(*(sbyte*)ptr54);
-				goto IL_1c03;
+				goto IL_1bfc;
 			}
 			int num105 = (int)(num10 >>> 48);
 			num10 <<= 16;
 			num11 = checked(num11 - 16);
 			if (num105 == 0)
 			{
-				goto IL_1cfd;
+				goto IL_1cf6;
 			}
 			((lzham_symbol_codec*)codec)->m_arith_value = num8;
 			((lzham_symbol_codec*)codec)->m_arith_length = num9;
@@ -2891,9 +2891,9 @@ internal static partial class decompress_9tv66f
 			long num106 = decode_get_bytes_consumed.Invoke(codec);
 			*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num106;
 			*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
-			goto IL_1ce3;
+			goto IL_1cdc;
 		}
-		IL_6630:
+		IL_6606:
 		unchecked
 		{
 			long num107 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -2902,10 +2902,10 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 796;
 			return 2;
 		}
-		IL_45ec:
+		IL_45c9:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 705;
 		return 5;
-		IL_986a:
+		IL_9840:
 		unchecked
 		{
 			long num108 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -2914,7 +2914,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 945;
 			return 2;
 		}
-		IL_82b6:
+		IL_828c:
 		unchecked
 		{
 			int num109 = (int)((num10 >>> 48) + 1L);
@@ -2964,19 +2964,19 @@ internal static partial class decompress_9tv66f
 					num4 = 1;
 					num5 = 1;
 					num6 = 0;
-					goto IL_417b;
+					goto IL_4158;
 				}
 				if ((num11 & 7) == 0)
 				{
-					goto IL_a61f;
+					goto IL_a5ee;
 				}
-				goto IL_a310;
+				goto IL_a2df;
 			}
 			num12 = (num111 & 7) + 2;
 			num13 = (num111 >>> 3) + 1;
 			if (num12 != 9)
 			{
-				goto IL_9059;
+				goto IL_902f;
 			}
 			ptr5 = (byte*)(&((lzham_lzham_decompressor*)ptr)->m_large_len_table) + (((uint)num6 >= 7u) ? ((nint)1) : ((nint)0)) * (nint)sizeof(lzham_quasi_adaptive_huffman_data_model);
 			pDecode_tables2 = ((lzham_raw_quasi_adaptive_huffman_data_model*)((byte*)(&((lzham_lzham_decompressor*)ptr)->m_large_len_table) + (((uint)num6 >= 7u) ? ((nint)1) : ((nint)0)) * (nint)sizeof(lzham_quasi_adaptive_huffman_data_model)))->m_pDecode_tables;
@@ -2986,22 +2986,22 @@ internal static partial class decompress_9tv66f
 				if (ptr3 >= ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
 					ptr3 = (byte*)ptr3 + -4;
-					goto IL_84fa;
+					goto IL_84d0;
 				}
 				num84 = ((byte)((sbyte*)ptr3)[-4] << 24) | (((byte*)ptr3 + -4)[1] << 16) | (((byte*)ptr3 + -4)[2] << 8) | ((byte*)ptr3 + -4)[3];
 				num11 = checked(num11 + 32);
 				num10 |= (long)((ulong)(uint)num84 << (int)(uint)checked(64 - num11));
 			}
-			goto IL_8817;
+			goto IL_87ed;
 		}
-		IL_3e11:
+		IL_3dee:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num56 << (int)(uint)checked(64 - num11));
-			goto IL_3bb2;
+			goto IL_3b8f;
 		}
-		IL_3bb2:
+		IL_3b8f:
 		unchecked
 		{
 			if (num11 < 8)
@@ -3021,28 +3021,28 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_3ca0;
+						goto IL_3c7d;
 					}
-					goto IL_3dc9;
+					goto IL_3da6;
 				}
 				void* ptr55 = ptr3;
 				ptr3 = (byte*)ptr55 + 1;
 				num56 = (byte)(*(sbyte*)ptr55);
-				goto IL_3e11;
+				goto IL_3dee;
 			}
 			int num114 = (int)(num10 >>> 56);
 			num10 <<= 8;
 			num11 = checked(num11 - 8);
 			num8 = (num8 << 8) | num114;
 			num9++;
-			goto IL_3ba4;
+			goto IL_3b81;
 		}
-		IL_3ba4:
+		IL_3b81:
 		unchecked
 		{
 			if ((uint)num9 < 4u)
 			{
-				goto IL_3bb2;
+				goto IL_3b8f;
 			}
 			num9 = -1;
 			num2 = 1;
@@ -3051,9 +3051,9 @@ internal static partial class decompress_9tv66f
 			num5 = 1;
 			num6 = 0;
 			((lzham_lzham_decompressor*)ptr)->m_start_block_dst_ofs = num7;
-			goto IL_3e9b;
+			goto IL_3e78;
 		}
-		IL_62cd:
+		IL_62a3:
 		int num115 = 0;
 		unchecked
 		{
@@ -3065,9 +3065,9 @@ internal static partial class decompress_9tv66f
 			}
 			num11 = checked(num11 + 8);
 			num10 |= (long)((ulong)(uint)num115 << (int)(uint)checked(64 - num11));
-			goto IL_608a;
+			goto IL_6060;
 		}
-		IL_8cca:
+		IL_8ca0:
 		int num116;
 		unchecked
 		{
@@ -3090,22 +3090,22 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_8def;
+						goto IL_8dc5;
 					}
-					goto IL_8f2a;
+					goto IL_8f00;
 				}
 				void* ptr57 = ptr3;
 				ptr3 = (byte*)ptr57 + 1;
 				num27 = (byte)(*(sbyte*)ptr57);
-				goto IL_8f72;
+				goto IL_8f48;
 			}
 			num116 = (int)(((bool*)s_huge_match_code_len.Pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]))) : 0);
 			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12];
 		}
 		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]);
 		num12 = unchecked(((int*)s_huge_match_base_len.Pointer)[(uint)num12] + num116);
-		goto IL_9059;
-		IL_9a80:
+		goto IL_902f;
+		IL_9a56:
 		unchecked
 		{
 			int num117 = (int)((num10 >>> 48) + 1L);
@@ -3146,9 +3146,9 @@ internal static partial class decompress_9tv66f
 				}
 			}
 			num14 += num119;
-			goto IL_9c18;
+			goto IL_9bee;
 		}
-		IL_7862:
+		IL_7838:
 		unchecked
 		{
 			long num122 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3157,7 +3157,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 828;
 			return 2;
 		}
-		IL_0bed:
+		IL_0be6:
 		unchecked
 		{
 			long num123 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3166,14 +3166,14 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 381;
 			return 2;
 		}
-		IL_9675:
+		IL_964b:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num47 << (int)(uint)checked(64 - num11));
-			goto IL_93c5;
+			goto IL_939b;
 		}
-		IL_21b6:
+		IL_21af:
 		unchecked
 		{
 			if (((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining != 0L)
@@ -3206,9 +3206,9 @@ internal static partial class decompress_9tv66f
 			num5 = ((lzham_lzham_decompressor*)ptr)->m_match_hist3;
 			num6 = ((lzham_lzham_decompressor*)ptr)->m_cur_state;
 			num7 = ((lzham_lzham_decompressor*)ptr)->m_dst_ofs;
-			goto IL_2596;
+			goto IL_2588;
 		}
-		IL_72fa:
+		IL_72d0:
 		num32 = 0;
 		unchecked
 		{
@@ -3218,9 +3218,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr58 + 1;
 				num32 = (byte)(*(sbyte*)ptr58);
 			}
-			goto IL_7342;
+			goto IL_7318;
 		}
-		IL_2c5f:
+		IL_2c51:
 		unchecked
 		{
 			if (num11 < (num11 & 7))
@@ -3241,14 +3241,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_2d61;
+						goto IL_2d53;
 					}
-					goto IL_2e93;
+					goto IL_2e85;
 				}
 				void* ptr59 = ptr3;
 				ptr3 = (byte*)ptr59 + 1;
 				num22 = (byte)(*(sbyte*)ptr59);
-				goto IL_2edb;
+				goto IL_2ecd;
 			}
 			if ((num11 & 7) != 0)
 			{
@@ -3257,8 +3257,8 @@ internal static partial class decompress_9tv66f
 			num10 <<= (int)(uint)(num11 & 7);
 		}
 		num11 -= num11 & 7;
-		goto IL_2f60;
-		IL_17ad:
+		goto IL_2f52;
+		IL_17a6:
 		unchecked
 		{
 			long num127 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3267,7 +3267,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 445;
 			return 2;
 		}
-		IL_12fd:
+		IL_12f6:
 		num23 = 0;
 		unchecked
 		{
@@ -3277,9 +3277,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr60 + 1;
 				num23 = (byte)(*(sbyte*)ptr60);
 			}
-			goto IL_1345;
+			goto IL_133e;
 		}
-		IL_9c66:
+		IL_9c3c:
 		unchecked
 		{
 			if ((ulong)num2 > (ulong)(uint)num7 || (ulong)(uint)(num7 + num12) > (ulong)pOut_buf_size)
@@ -3292,12 +3292,12 @@ internal static partial class decompress_9tv66f
 				long num128 = decode_get_bytes_consumed.Invoke(codec);
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num128;
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
-				goto IL_9d06;
+				goto IL_9cdc;
 			}
 			ptr14 = (byte*)pOut_buf + (uint)((num7 - num2) & -1);
 			if (-1 == 0 && (uint)((((uint)src_ofs >= (uint)num7) ? src_ofs : num7) + num12) > uint.MaxValue)
 			{
-				goto IL_9d59;
+				goto IL_9d2f;
 			}
 			void* ptr61 = (byte*)pOut_buf + (uint)num7;
 			if (num2 == 1)
@@ -3335,12 +3335,12 @@ internal static partial class decompress_9tv66f
 				llvm_memcpy_p0_p0_i64.Invoke(ptr61, ptr14, (uint)num12, isVolatile: false);
 			}
 			num7 += num12;
-			goto IL_417b;
+			goto IL_4158;
 		}
-		IL_2c2e:
+		IL_2c20:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 530;
 		return 9;
-		IL_7d96:
+		IL_7d6c:
 		int num129 = 0;
 		unchecked
 		{
@@ -3350,9 +3350,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr65 + 1;
 				num129 = (byte)(*(sbyte*)ptr65);
 			}
-			goto IL_7dde;
+			goto IL_7db4;
 		}
-		IL_94e9:
+		IL_94bf:
 		unchecked
 		{
 			long num130 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3361,14 +3361,14 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 936;
 			return 2;
 		}
-		IL_afc5:
+		IL_af8d:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num81 << (int)(uint)checked(64 - num11));
-			goto IL_ad65;
+			goto IL_ad2d;
 		}
-		IL_6f25:
+		IL_6efb:
 		unchecked
 		{
 			int num131 = (int)((num10 >>> 48) + 1L);
@@ -3410,12 +3410,12 @@ internal static partial class decompress_9tv66f
 			num12 += 2;
 			if (num12 != 258)
 			{
-				goto IL_7728;
+				goto IL_76fe;
 			}
 			num12 = 0;
-			goto IL_70c9;
+			goto IL_709f;
 		}
-		IL_11d4:
+		IL_11cd:
 		unchecked
 		{
 			long num135 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3424,7 +3424,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 431;
 			return 2;
 		}
-		IL_3f89:
+		IL_3f66:
 		unchecked
 		{
 			long num136 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3433,22 +3433,22 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 651;
 			return 2;
 		}
-		IL_2b25:
+		IL_2b17:
 		num11 += 8;
 		int num137;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num137 << (int)(uint)checked(64 - num11));
-			goto IL_28ac;
+			goto IL_289e;
 		}
-		IL_8c57:
+		IL_8c2d:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num79 << (int)(uint)checked(64 - num11));
-			goto IL_89c4;
+			goto IL_899a;
 		}
-		IL_4c41:
+		IL_4c1e:
 		unchecked
 		{
 			long num138 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3457,14 +3457,14 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 737;
 			return 2;
 		}
-		IL_1345:
+		IL_133e:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num23 << (int)(uint)checked(64 - num11));
-			goto IL_10e6;
+			goto IL_10df;
 		}
-		IL_6931:
+		IL_6907:
 		unchecked
 		{
 			long num139 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3473,7 +3473,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 801;
 			return 2;
 		}
-		IL_29ab:
+		IL_299d:
 		unchecked
 		{
 			long num140 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3482,7 +3482,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 520;
 			return 2;
 		}
-		IL_5c43:
+		IL_5c19:
 		unchecked
 		{
 			if (num11 < 8)
@@ -3503,14 +3503,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_5d42;
+						goto IL_5d18;
 					}
-					goto IL_5e74;
+					goto IL_5e4a;
 				}
 				void* ptr66 = ptr3;
 				ptr3 = (byte*)ptr66 + 1;
 				num37 = (byte)(*(sbyte*)ptr66);
-				goto IL_5ebc;
+				goto IL_5e92;
 			}
 			int num141 = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -3518,9 +3518,9 @@ internal static partial class decompress_9tv66f
 			ptr23 = ((lzham_symbol_codec*)codec)->m_pSaved_model;
 			num8 = (num8 << 8) | num141;
 			num9 <<= 8;
-			goto IL_5c20;
+			goto IL_5bf6;
 		}
-		IL_8ad4:
+		IL_8aaa:
 		unchecked
 		{
 			long num142 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3529,7 +3529,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 907;
 			return 2;
 		}
-		IL_3e9b:
+		IL_3e78:
 		int num143;
 		unchecked
 		{
@@ -3550,14 +3550,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_3f89;
+						goto IL_3f66;
 					}
-					goto IL_40b2;
+					goto IL_408f;
 				}
 				void* ptr67 = ptr3;
 				ptr3 = (byte*)ptr67 + 1;
 				num55 = (byte)(*(sbyte*)ptr67);
-				goto IL_40fa;
+				goto IL_40d7;
 			}
 			num143 = (int)(num10 >>> 62);
 			num10 <<= 2;
@@ -3576,11 +3576,11 @@ internal static partial class decompress_9tv66f
 			}
 			break;
 		}
-		goto IL_417b;
-		IL_2041:
+		goto IL_4158;
+		IL_203a:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 462;
 		return 14;
-		IL_13b4:
+		IL_13ad:
 		int num144;
 		unchecked
 		{
@@ -3601,14 +3601,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_14a2;
+						goto IL_149b;
 					}
-					goto IL_15cb;
+					goto IL_15c4;
 				}
 				void* ptr68 = ptr3;
 				ptr3 = (byte*)ptr68 + 1;
 				num144 = (byte)(*(sbyte*)ptr68);
-				goto IL_1613;
+				goto IL_160c;
 			}
 			((lzham_lzham_decompressor*)ptr)->m_tmp = (int)(num10 >>> 62);
 			num10 <<= 2;
@@ -3627,11 +3627,11 @@ internal static partial class decompress_9tv66f
 			}
 			if ((num11 & 7) == 0)
 			{
-				goto IL_19a3;
+				goto IL_199c;
 			}
-			goto IL_16bc;
+			goto IL_16b5;
 		}
-		IL_6e65:
+		IL_6e3b:
 		num45 = 0;
 		unchecked
 		{
@@ -3643,12 +3643,12 @@ internal static partial class decompress_9tv66f
 			}
 			num11 = checked(num11 + 8);
 			num10 |= (long)((ulong)(uint)num45 << (int)(uint)checked(64 - num11));
-			goto IL_6c22;
+			goto IL_6bf8;
 		}
-		IL_417b:
+		IL_4158:
 		ptr46 = unchecked((byte*)(&((lzham_lzham_decompressor*)ptr)->m_is_match_model) + (nint)(uint)num6 * (nint)sizeof(lzham_adaptive_bit_model));
-		goto IL_4197;
-		IL_4d85:
+		goto IL_4174;
+		IL_4d62:
 		num92 = 0;
 		unchecked
 		{
@@ -3660,12 +3660,12 @@ internal static partial class decompress_9tv66f
 			}
 			num11 = checked(num11 + 8);
 			num10 |= (long)((ulong)(uint)num92 << (int)(uint)checked(64 - num11));
-			goto IL_4b42;
+			goto IL_4b1f;
 		}
-		IL_4659:
+		IL_4636:
 		if (num11 >= 24)
 		{
-			goto IL_4942;
+			goto IL_491f;
 		}
 		unchecked
 		{
@@ -3683,11 +3683,11 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 				((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 				((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-				goto IL_4747;
+				goto IL_4724;
 			}
-			goto IL_4882;
+			goto IL_485f;
 		}
-		IL_2add:
+		IL_2acf:
 		num137 = 0;
 		unchecked
 		{
@@ -3697,15 +3697,15 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr71 + 1;
 				num137 = (byte)(*(sbyte*)ptr71);
 			}
-			goto IL_2b25;
+			goto IL_2b17;
 		}
-		IL_5c20:
+		IL_5bf6:
 		unchecked
 		{
 			if ((uint)num9 < 16777216u)
 			{
 				((lzham_symbol_codec*)codec)->m_pSaved_model = ptr23;
-				goto IL_5c43;
+				goto IL_5c19;
 			}
 			int num145 = (ushort)((lzham_adaptive_bit_model*)ptr23)->m_bit_0_prob * (num9 >>> 11);
 			int num146 = (((uint)num8 >= (uint)num145) ? 1 : 0);
@@ -3727,7 +3727,7 @@ internal static partial class decompress_9tv66f
 			if (num146 != 0)
 			{
 				num6 = InstructionHelper.Select((uint)num6 < 7u, 9, 11);
-				goto IL_9c66;
+				goto IL_9c3c;
 			}
 			ptr8 = (byte*)(&((lzham_lzham_decompressor*)ptr)->m_rep_len_table) + (((uint)num6 >= 7u) ? ((nint)1) : ((nint)0)) * (nint)sizeof(lzham_quasi_adaptive_huffman_data_model);
 			pDecode_tables5 = ((lzham_raw_quasi_adaptive_huffman_data_model*)((byte*)(&((lzham_lzham_decompressor*)ptr)->m_rep_len_table) + (((uint)num6 >= 7u) ? ((nint)1) : ((nint)0)) * (nint)sizeof(lzham_quasi_adaptive_huffman_data_model)))->m_pDecode_tables;
@@ -3737,15 +3737,15 @@ internal static partial class decompress_9tv66f
 				if (ptr3 >= ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
 					ptr3 = (byte*)ptr3 + -4;
-					goto IL_608a;
+					goto IL_6060;
 				}
 				num115 = ((byte)((sbyte*)ptr3)[-4] << 24) | (((byte*)ptr3 + -4)[1] << 16) | (((byte*)ptr3 + -4)[2] << 8) | ((byte*)ptr3 + -4)[3];
 				num11 = checked(num11 + 32);
 				num10 |= (long)((ulong)(uint)num115 << (int)(uint)checked(64 - num11));
 			}
-			goto IL_638d;
+			goto IL_6363;
 		}
-		IL_638d:
+		IL_6363:
 		unchecked
 		{
 			int num149 = (int)((num10 >>> 48) + 1L);
@@ -3787,15 +3787,15 @@ internal static partial class decompress_9tv66f
 			num12 += 2;
 			if (num12 != 258)
 			{
-				goto IL_6b90;
+				goto IL_6b66;
 			}
 			num12 = 0;
-			goto IL_6531;
+			goto IL_6507;
 		}
-		IL_9d06:
+		IL_9cdc:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 976;
 		return 7;
-		IL_9c18:
+		IL_9bee:
 		num5 = num4;
 		num4 = num3;
 		num3 = num2;
@@ -3804,17 +3804,17 @@ internal static partial class decompress_9tv66f
 			_ = &((lzham_lzham_decompressor*)ptr)->m_lzBase;
 			num2 = ((int*)m_lzx_position_base.Pointer)[(uint)num13] + num14;
 			num6 = InstructionHelper.Select((uint)num6 < 7u, 7, 10);
-			goto IL_9c66;
+			goto IL_9c3c;
 		}
-		IL_1f5d:
+		IL_1f56:
 		num11 += 8;
 		int num153;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num153 << (int)(uint)checked(64 - num11));
-			goto IL_1cfd;
+			goto IL_1cf6;
 		}
-		IL_18d6:
+		IL_18cf:
 		int num154 = 0;
 		unchecked
 		{
@@ -3824,9 +3824,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr72 + 1;
 				num154 = (byte)(*(sbyte*)ptr72);
 			}
-			goto IL_191e;
+			goto IL_1917;
 		}
-		IL_1dec:
+		IL_1de5:
 		unchecked
 		{
 			long num155 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3835,7 +3835,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 456;
 			return 2;
 		}
-		IL_28ac:
+		IL_289e:
 		unchecked
 		{
 			if (num11 < 8)
@@ -3856,14 +3856,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_29ab;
+						goto IL_299d;
 					}
-					goto IL_2add;
+					goto IL_2acf;
 				}
 				void* ptr73 = ptr3;
 				ptr3 = (byte*)ptr73 + 1;
 				num137 = (byte)(*(sbyte*)ptr73);
-				goto IL_2b25;
+				goto IL_2b17;
 			}
 			int num156 = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -3878,25 +3878,25 @@ internal static partial class decompress_9tv66f
 				long num157 = decode_get_bytes_consumed.Invoke(codec);
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num157;
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
-				goto IL_2c2e;
+				goto IL_2c20;
 			}
 			num17++;
 			if ((num11 & 7) == 0)
 			{
-				goto IL_2f60;
+				goto IL_2f52;
 			}
-			goto IL_2c5f;
+			goto IL_2c51;
 		}
-		IL_7728:
+		IL_76fe:
 		ptr48 = unchecked((byte*)(&((lzham_lzham_decompressor*)ptr)->m_is_rep1_model) + (nint)(uint)num6 * (nint)sizeof(lzham_adaptive_bit_model));
-		goto IL_7740;
-		IL_5438:
+		goto IL_7716;
+		IL_540e:
 		unchecked
 		{
 			if ((uint)num9 < 16777216u)
 			{
 				((lzham_symbol_codec*)codec)->m_pSaved_model = ptr47;
-				goto IL_545b;
+				goto IL_5431;
 			}
 			int num158 = (ushort)((lzham_adaptive_bit_model*)ptr47)->m_bit_0_prob * (num9 >>> 11);
 			int num159 = (((uint)num8 >= (uint)num158) ? 1 : 0);
@@ -3918,7 +3918,7 @@ internal static partial class decompress_9tv66f
 			if (num159 != 0)
 			{
 				ptr22 = (byte*)(&((lzham_lzham_decompressor*)ptr)->m_is_rep0_model) + (nint)(uint)num6 * (nint)sizeof(lzham_adaptive_bit_model);
-				goto IL_582c;
+				goto IL_5802;
 			}
 			ptr6 = &((lzham_lzham_decompressor*)ptr)->m_main_table;
 			pDecode_tables3 = ((lzham_raw_quasi_adaptive_huffman_data_model*)(&((lzham_lzham_decompressor*)ptr)->m_main_table))->m_pDecode_tables;
@@ -3928,15 +3928,15 @@ internal static partial class decompress_9tv66f
 				if (ptr3 >= ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 				{
 					ptr3 = (byte*)ptr3 + -4;
-					goto IL_7fb3;
+					goto IL_7f89;
 				}
 				num49 = ((byte)((sbyte*)ptr3)[-4] << 24) | (((byte*)ptr3 + -4)[1] << 16) | (((byte*)ptr3 + -4)[2] << 8) | ((byte*)ptr3 + -4)[3];
 				num11 = checked(num11 + 32);
 				num10 |= (long)((ulong)(uint)num49 << (int)(uint)checked(64 - num11));
 			}
-			goto IL_82b6;
+			goto IL_828c;
 		}
-		IL_15cb:
+		IL_15c4:
 		num144 = 0;
 		unchecked
 		{
@@ -3946,9 +3946,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr74 + 1;
 				num144 = (byte)(*(sbyte*)ptr74);
 			}
-			goto IL_1613;
+			goto IL_160c;
 		}
-		IL_860a:
+		IL_85e0:
 		unchecked
 		{
 			long num162 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3957,7 +3957,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 898;
 			return 2;
 		}
-		IL_14a2:
+		IL_149b:
 		unchecked
 		{
 			long num163 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3966,7 +3966,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 437;
 			return 2;
 		}
-		IL_594e:
+		IL_5924:
 		unchecked
 		{
 			long num164 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -3975,14 +3975,14 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 777;
 			return 2;
 		}
-		IL_1613:
+		IL_160c:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num144 << (int)(uint)checked(64 - num11));
-			goto IL_13b4;
+			goto IL_13ad;
 		}
-		IL_8817:
+		IL_87ed:
 		unchecked
 		{
 			int num165 = (int)((num10 >>> 48) + 1L);
@@ -4025,12 +4025,12 @@ internal static partial class decompress_9tv66f
 			num12 += num167;
 			if (num12 != 258)
 			{
-				goto IL_9059;
+				goto IL_902f;
 			}
 			num12 = 0;
-			goto IL_89c4;
+			goto IL_899a;
 		}
-		IL_1f15:
+		IL_1f0e:
 		num153 = 0;
 		unchecked
 		{
@@ -4040,15 +4040,15 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr75 + 1;
 				num153 = (byte)(*(sbyte*)ptr75);
 			}
-			goto IL_1f5d;
+			goto IL_1f56;
 		}
-		IL_7b42:
+		IL_7b18:
 		unchecked
 		{
 			if ((uint)num9 < 16777216u)
 			{
 				((lzham_symbol_codec*)codec)->m_pSaved_model = ptr49;
-				goto IL_7b65;
+				goto IL_7b3b;
 			}
 			int num171 = (ushort)((lzham_adaptive_bit_model*)ptr49)->m_bit_0_prob * (num9 >>> 11);
 			int num172 = (((uint)num8 >= (uint)num171) ? 1 : 0);
@@ -4082,12 +4082,12 @@ internal static partial class decompress_9tv66f
 				num3 = num2;
 				num2 = num176;
 			}
-			goto IL_7f45;
+			goto IL_7f1b;
 		}
-		IL_608a:
+		IL_6060:
 		if (num11 >= 24)
 		{
-			goto IL_638d;
+			goto IL_6363;
 		}
 		unchecked
 		{
@@ -4106,11 +4106,11 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 				((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 				((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-				goto IL_6189;
+				goto IL_615f;
 			}
-			goto IL_62cd;
+			goto IL_62a3;
 		}
-		IL_555a:
+		IL_5530:
 		unchecked
 		{
 			long num177 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4119,22 +4119,22 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 774;
 			return 2;
 		}
-		IL_285a:
+		IL_284c:
 		num11 += 8;
 		int num178;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num178 << (int)(uint)checked(64 - num11));
-			goto IL_25e0;
+			goto IL_25d2;
 		}
-		IL_7dde:
+		IL_7db4:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num129 << (int)(uint)checked(64 - num11));
-			goto IL_7b65;
+			goto IL_7b3b;
 		}
-		IL_4747:
+		IL_4724:
 		unchecked
 		{
 			long num179 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4143,7 +4143,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 711;
 			return 2;
 		}
-		IL_4882:
+		IL_485f:
 		num91 = 0;
 		unchecked
 		{
@@ -4155,9 +4155,9 @@ internal static partial class decompress_9tv66f
 			}
 			num11 = checked(num11 + 8);
 			num10 |= (long)((ulong)(uint)num91 << (int)(uint)checked(64 - num11));
-			goto IL_4659;
+			goto IL_4636;
 		}
-		IL_26e0:
+		IL_26d2:
 		unchecked
 		{
 			long num180 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4166,10 +4166,10 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 517;
 			return 2;
 		}
-		IL_84fa:
+		IL_84d0:
 		if (num11 >= 24)
 		{
-			goto IL_8817;
+			goto IL_87ed;
 		}
 		unchecked
 		{
@@ -4189,11 +4189,11 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 				((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 				((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-				goto IL_860a;
+				goto IL_85e0;
 			}
-			goto IL_8757;
+			goto IL_872d;
 		}
-		IL_1cfd:
+		IL_1cf6:
 		unchecked
 		{
 			if (num11 < 16)
@@ -4213,14 +4213,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_1dec;
+						goto IL_1de5;
 					}
-					goto IL_1f15;
+					goto IL_1f0e;
 				}
 				void* ptr77 = ptr3;
 				ptr3 = (byte*)ptr77 + 1;
 				num153 = (byte)(*(sbyte*)ptr77);
-				goto IL_1f5d;
+				goto IL_1f56;
 			}
 			int num105 = (int)(num10 >>> 48);
 			num10 <<= 16;
@@ -4235,11 +4235,11 @@ internal static partial class decompress_9tv66f
 				long num181 = decode_get_bytes_consumed.Invoke(codec);
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num181;
 				*(long*)((lzham_lzham_decompressor*)ptr)->m_pOut_buf_size = 0L;
-				goto IL_2041;
+				goto IL_203a;
 			}
 			if (((lzham_lzham_decompressor*)ptr)->m_tmp != 2 && ((lzham_lzham_decompressor*)ptr)->m_tmp != 3)
 			{
-				goto IL_a61f;
+				goto IL_a5ee;
 			}
 			((lzham_symbol_codec*)codec)->m_arith_value = num8;
 			((lzham_symbol_codec*)codec)->m_arith_length = num9;
@@ -4269,7 +4269,7 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_seed_bytes_to_ignore_when_flushing = 0;
 				int dst_highwater_ofs4;
 				((lzham_lzham_decompressor*)ptr)->m_dst_highwater_ofs = dst_highwater_ofs4;
-				goto IL_21b6;
+				goto IL_21af;
 			}
 			long num182 = decode_get_bytes_consumed.Invoke(codec);
 			*(long*)((lzham_lzham_decompressor*)ptr)->m_pIn_buf_size = num182;
@@ -4285,17 +4285,17 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 496;
 			return 0;
 		}
-		IL_1ce3:
+		IL_1cdc:
 		unchecked((lzham_lzham_decompressor*)ptr)->m_state = 453;
 		return 14;
-		IL_6aab:
+		IL_6a81:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num35 << (int)(uint)checked(64 - num11));
-			goto IL_681d;
+			goto IL_67f3;
 		}
-		IL_2812:
+		IL_2804:
 		num178 = 0;
 		unchecked
 		{
@@ -4305,19 +4305,19 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr78 + 1;
 				num178 = (byte)(*(sbyte*)ptr78);
 			}
-			goto IL_285a;
+			goto IL_284c;
 		}
-		IL_4419:
+		IL_43f6:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num102 << (int)(uint)checked(64 - num11));
-			goto IL_41ba;
+			goto IL_4197;
 		}
-		IL_6c22:
+		IL_6bf8:
 		if (num11 >= 24)
 		{
-			goto IL_6f25;
+			goto IL_6efb;
 		}
 		unchecked
 		{
@@ -4336,11 +4336,11 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 				((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 				((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-				goto IL_6d21;
+				goto IL_6cf7;
 			}
-			goto IL_6e65;
+			goto IL_6e3b;
 		}
-		IL_4942:
+		IL_491f:
 		unchecked
 		{
 			int num184 = (int)((num10 >>> 48) + 1L);
@@ -4381,9 +4381,9 @@ internal static partial class decompress_9tv66f
 				}
 			}
 			((sbyte*)pOut_buf)[(uint)num7] = (sbyte)num186;
-			goto IL_4ff1;
+			goto IL_4fce;
 		}
-		IL_7994:
+		IL_796a:
 		num48 = 0;
 		unchecked
 		{
@@ -4393,9 +4393,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr79 + 1;
 				num48 = (byte)(*(sbyte*)ptr79);
 			}
-			goto IL_79dc;
+			goto IL_79b2;
 		}
-		IL_6d21:
+		IL_6cf7:
 		unchecked
 		{
 			long num190 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4404,14 +4404,14 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 810;
 			return 2;
 		}
-		IL_56d4:
+		IL_56aa:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num20 << (int)(uint)checked(64 - num11));
-			goto IL_545b;
+			goto IL_5431;
 		}
-		IL_80b2:
+		IL_8088:
 		unchecked
 		{
 			long num191 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4420,7 +4420,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 864;
 			return 2;
 		}
-		IL_25e0:
+		IL_25d2:
 		unchecked
 		{
 			if (num11 < 24)
@@ -4441,21 +4441,21 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_26e0;
+						goto IL_26d2;
 					}
-					goto IL_2812;
+					goto IL_2804;
 				}
 				void* ptr80 = ptr3;
 				ptr3 = (byte*)ptr80 + 1;
 				num178 = (byte)(*(sbyte*)ptr80);
-				goto IL_285a;
+				goto IL_284c;
 			}
 			num17 = (int)(num10 >>> 40);
 			num10 <<= 24;
 		}
 		num11 -= 24;
-		goto IL_28ac;
-		IL_3ca0:
+		goto IL_289e;
+		IL_3c7d:
 		unchecked
 		{
 			long num192 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4464,7 +4464,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 640;
 			return 2;
 		}
-		IL_16bc:
+		IL_16b5:
 		unchecked
 		{
 			if (num11 < (num11 & 7))
@@ -4484,14 +4484,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_17ad;
+						goto IL_17a6;
 					}
-					goto IL_18d6;
+					goto IL_18cf;
 				}
 				void* ptr81 = ptr3;
 				ptr3 = (byte*)ptr81 + 1;
 				num154 = (byte)(*(sbyte*)ptr81);
-				goto IL_191e;
+				goto IL_1917;
 			}
 			if ((num11 & 7) != 0)
 			{
@@ -4500,8 +4500,8 @@ internal static partial class decompress_9tv66f
 			num10 <<= (int)(uint)(num11 & 7);
 		}
 		num11 -= num11 & 7;
-		goto IL_19a3;
-		IL_40b2:
+		goto IL_199c;
+		IL_408f:
 		num55 = 0;
 		unchecked
 		{
@@ -4511,12 +4511,12 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr82 + 1;
 				num55 = (byte)(*(sbyte*)ptr82);
 			}
-			goto IL_40fa;
+			goto IL_40d7;
 		}
-		IL_6b90:
+		IL_6b66:
 		num6 = InstructionHelper.Select(unchecked((uint)num6) < 7u, 8, 11);
-		goto IL_9c66;
-		IL_a52a:
+		goto IL_9c3c;
+		IL_a4f9:
 		int num193 = 0;
 		unchecked
 		{
@@ -4526,9 +4526,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr83 + 1;
 				num193 = (byte)(*(sbyte*)ptr83);
 			}
-			goto IL_a572;
+			goto IL_a541;
 		}
-		IL_7763:
+		IL_7739:
 		unchecked
 		{
 			if (num11 < 8)
@@ -4549,14 +4549,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_7862;
+						goto IL_7838;
 					}
-					goto IL_7994;
+					goto IL_796a;
 				}
 				void* ptr84 = ptr3;
 				ptr3 = (byte*)ptr84 + 1;
 				num48 = (byte)(*(sbyte*)ptr84);
-				goto IL_79dc;
+				goto IL_79b2;
 			}
 			int num194 = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -4564,9 +4564,9 @@ internal static partial class decompress_9tv66f
 			ptr48 = ((lzham_symbol_codec*)codec)->m_pSaved_model;
 			num8 = (num8 << 8) | num194;
 			num9 <<= 8;
-			goto IL_7740;
+			goto IL_7716;
 		}
-		IL_4e45:
+		IL_4e22:
 		unchecked
 		{
 			int num195 = (int)((num10 >>> 48) + 1L);
@@ -4607,23 +4607,23 @@ internal static partial class decompress_9tv66f
 				}
 			}
 			((sbyte*)pOut_buf)[(uint)num7] = (sbyte)(num197 ^ num16);
-			goto IL_4ff1;
+			goto IL_4fce;
 		}
-		IL_1c03:
+		IL_1bfc:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num76 << (int)(uint)checked(64 - num11));
-			goto IL_19a3;
+			goto IL_199c;
 		}
-		IL_a572:
+		IL_a541:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num193 << (int)(uint)checked(64 - num11));
-			goto IL_a310;
+			goto IL_a2df;
 		}
-		IL_2596:
+		IL_2588:
 		unchecked
 		{
 			num8 = ((lzham_symbol_codec*)codec)->m_arith_value;
@@ -4631,9 +4631,9 @@ internal static partial class decompress_9tv66f
 			num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-			goto IL_a61f;
+			goto IL_a5ee;
 		}
-		IL_545b:
+		IL_5431:
 		unchecked
 		{
 			if (num11 < 8)
@@ -4654,14 +4654,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_555a;
+						goto IL_5530;
 					}
-					goto IL_568c;
+					goto IL_5662;
 				}
 				void* ptr85 = ptr3;
 				ptr3 = (byte*)ptr85 + 1;
 				num20 = (byte)(*(sbyte*)ptr85);
-				goto IL_56d4;
+				goto IL_56aa;
 			}
 			int num201 = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -4669,9 +4669,9 @@ internal static partial class decompress_9tv66f
 			ptr47 = ((lzham_symbol_codec*)codec)->m_pSaved_model;
 			num8 = (num8 << 8) | num201;
 			num9 <<= 8;
-			goto IL_5438;
+			goto IL_540e;
 		}
-		IL_75fb:
+		IL_75d1:
 		num75 = 0;
 		unchecked
 		{
@@ -4681,12 +4681,12 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr86 + 1;
 				num75 = (byte)(*(sbyte*)ptr86);
 			}
-			goto IL_7643;
+			goto IL_7619;
 		}
-		IL_7fb3:
+		IL_7f89:
 		if (num11 >= 24)
 		{
-			goto IL_82b6;
+			goto IL_828c;
 		}
 		unchecked
 		{
@@ -4705,18 +4705,18 @@ internal static partial class decompress_9tv66f
 				((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 				((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 				((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-				goto IL_80b2;
+				goto IL_8088;
 			}
-			goto IL_81f6;
+			goto IL_81cc;
 		}
-		IL_4ff1:
+		IL_4fce:
 		unchecked
 		{
 			num6 = (byte)((sbyte*)s_literal_next_state.Pointer)[(uint)num6];
 			num7++;
 			if (uint.MaxValue != 0 || (uint)num7 <= uint.MaxValue)
 			{
-				goto IL_417b;
+				goto IL_4158;
 			}
 			int arith_value3;
 			((lzham_symbol_codec*)codec)->m_arith_value = arith_value3;
@@ -4749,16 +4749,16 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_seed_bytes_to_ignore_when_flushing = 0;
 			int dst_highwater_ofs5;
 			((lzham_lzham_decompressor*)ptr)->m_dst_highwater_ofs = dst_highwater_ofs5;
-			goto IL_514a;
+			goto IL_5127;
 		}
-		IL_191e:
+		IL_1917:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num154 << (int)(uint)checked(64 - num11));
-			goto IL_16bc;
+			goto IL_16b5;
 		}
-		IL_a310:
+		IL_a2df:
 		unchecked
 		{
 			if (num11 < (num11 & 7))
@@ -4778,14 +4778,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_a401;
+						goto IL_a3d0;
 					}
-					goto IL_a52a;
+					goto IL_a4f9;
 				}
 				void* ptr87 = ptr3;
 				ptr3 = (byte*)ptr87 + 1;
 				num193 = (byte)(*(sbyte*)ptr87);
-				goto IL_a572;
+				goto IL_a541;
 			}
 			if ((num11 & 7) != 0)
 			{
@@ -4794,8 +4794,8 @@ internal static partial class decompress_9tv66f
 			num10 <<= (int)(uint)(num11 & 7);
 		}
 		num11 -= num11 & 7;
-		goto IL_a61f;
-		IL_7b65:
+		goto IL_a5ee;
+		IL_7b3b:
 		unchecked
 		{
 			if (num11 < 8)
@@ -4816,14 +4816,14 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_7c64;
+						goto IL_7c3a;
 					}
-					goto IL_7d96;
+					goto IL_7d6c;
 				}
 				void* ptr88 = ptr3;
 				ptr3 = (byte*)ptr88 + 1;
 				num129 = (byte)(*(sbyte*)ptr88);
-				goto IL_7dde;
+				goto IL_7db4;
 			}
 			int num202 = (int)(num10 >>> 56);
 			num10 <<= 8;
@@ -4831,9 +4831,9 @@ internal static partial class decompress_9tv66f
 			ptr49 = ((lzham_symbol_codec*)codec)->m_pSaved_model;
 			num8 = (num8 << 8) | num202;
 			num9 <<= 8;
-			goto IL_7b42;
+			goto IL_7b18;
 		}
-		IL_b368:
+		IL_b330:
 		unchecked
 		{
 			((lzham_symbol_codec*)codec)->m_arith_value = num8;
@@ -4849,7 +4849,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 1110;
 			return ((lzham_lzham_decompressor*)ptr)->m_status;
 		}
-		IL_7c64:
+		IL_7c3a:
 		unchecked
 		{
 			long num205 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4858,7 +4858,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 837;
 			return 2;
 		}
-		IL_73b5:
+		IL_738b:
 		int num206;
 		unchecked
 		{
@@ -4880,22 +4880,22 @@ internal static partial class decompress_9tv66f
 						((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 						((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 						((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-						goto IL_74c9;
+						goto IL_749f;
 					}
-					goto IL_75fb;
+					goto IL_75d1;
 				}
 				void* ptr89 = ptr3;
 				ptr3 = (byte*)ptr89 + 1;
 				num75 = (byte)(*(sbyte*)ptr89);
-				goto IL_7643;
+				goto IL_7619;
 			}
 			num206 = (int)(((bool*)s_huge_match_code_len.Pointer)[(uint)num12] ? (num10 >>> (int)(uint)checked(64 - unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]))) : 0);
 			num10 <<= (int)(byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12];
 		}
 		num11 -= unchecked((byte)((sbyte*)s_huge_match_code_len.Pointer)[(uint)num12]);
 		num12 = unchecked(((int*)s_huge_match_base_len.Pointer)[(uint)num12] + num206);
-		goto IL_7728;
-		IL_71c8:
+		goto IL_76fe;
+		IL_719e:
 		unchecked
 		{
 			long num207 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4904,7 +4904,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 819;
 			return 2;
 		}
-		IL_b113:
+		IL_b0db:
 		unchecked
 		{
 			long num208 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);
@@ -4913,7 +4913,7 @@ internal static partial class decompress_9tv66f
 			((lzham_lzham_decompressor*)ptr)->m_state = 1083;
 			return 2;
 		}
-		IL_514a:
+		IL_5127:
 		unchecked
 		{
 			if (((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining != 0L)
@@ -4952,9 +4952,9 @@ internal static partial class decompress_9tv66f
 			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
 			num7 = 0;
-			goto IL_417b;
+			goto IL_4158;
 		}
-		IL_a78f:
+		IL_a75e:
 		unchecked
 		{
 			if (((lzham_lzham_decompressor*)ptr)->m_flush_num_bytes_remaining != 0L)
@@ -4992,16 +4992,16 @@ internal static partial class decompress_9tv66f
 			num10 = ((lzham_symbol_codec*)codec)->m_bit_buf;
 			num11 = ((lzham_symbol_codec*)codec)->m_bit_count;
 			ptr3 = ((lzham_symbol_codec*)codec)->m_pDecode_buf_next;
-			goto IL_aa5a;
+			goto IL_aa22;
 		}
-		IL_7342:
+		IL_7318:
 		num11 += 8;
 		unchecked
 		{
 			num10 |= (long)((ulong)(uint)num32 << (int)(uint)checked(64 - num11));
-			goto IL_70c9;
+			goto IL_709f;
 		}
-		IL_89c4:
+		IL_899a:
 		unchecked
 		{
 			while (num11 >= 1)
@@ -5017,7 +5017,7 @@ internal static partial class decompress_9tv66f
 						continue;
 					}
 				}
-				goto IL_8cca;
+				goto IL_8ca0;
 			}
 			if (ptr3 == ((lzham_symbol_codec*)codec)->m_pDecode_buf_end)
 			{
@@ -5036,16 +5036,16 @@ internal static partial class decompress_9tv66f
 					((lzham_lzham_decompressor*)ptr)->m_match_hist3 = num5;
 					((lzham_lzham_decompressor*)ptr)->m_cur_state = num6;
 					((lzham_lzham_decompressor*)ptr)->m_dst_ofs = num7;
-					goto IL_8ad4;
+					goto IL_8aaa;
 				}
-				goto IL_8c0f;
+				goto IL_8be5;
 			}
 			void* ptr90 = ptr3;
 			ptr3 = (byte*)ptr90 + 1;
 			num79 = (byte)(*(sbyte*)ptr90);
-			goto IL_8c57;
+			goto IL_8c2d;
 		}
-		IL_5a80:
+		IL_5a56:
 		num26 = 0;
 		unchecked
 		{
@@ -5055,9 +5055,9 @@ internal static partial class decompress_9tv66f
 				ptr3 = (byte*)ptr91 + 1;
 				num26 = (byte)(*(sbyte*)ptr91);
 			}
-			goto IL_5ac8;
+			goto IL_5a9e;
 		}
-		IL_6189:
+		IL_615f:
 		unchecked
 		{
 			long num216 = decode_get_bytes_consumed.Invoke(&((lzham_lzham_decompressor*)ptr)->m_codec);

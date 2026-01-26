@@ -72,7 +72,7 @@ internal static partial class advance
 					{
 						update_yyeigq.Invoke((byte*)(&((lzham_lzcompressor_state*)@this)->field_5) + (nint)(uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state * (nint)sizeof(lzham_adaptive_bit_model), 1);
 						((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 9, 11);
-						goto IL_0761;
+						goto IL_075e;
 					}
 					update_yyeigq.Invoke((byte*)(&((lzham_lzcompressor_state*)@this)->field_5) + (nint)(uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state * (nint)sizeof(lzham_adaptive_bit_model), 0);
 					if (((lzham_CLZDecompBase*)lzdec)->m_cur_state > 257)
@@ -164,7 +164,7 @@ internal static partial class advance
 				{
 					if (num3 < 0)
 					{
-						goto IL_06d5;
+						goto IL_06d2;
 					}
 					if (((lzham_CLZDecompBase*)lzdec)->m_cur_state > 257)
 					{
@@ -175,7 +175,7 @@ internal static partial class advance
 						}
 						if (flag9)
 						{
-							goto IL_06d5;
+							goto IL_06d2;
 						}
 						flag2 = false;
 					}
@@ -188,13 +188,13 @@ internal static partial class advance
 						}
 						if (flag10)
 						{
-							goto IL_06d5;
+							goto IL_06d2;
 						}
 						flag2 = false;
 					}
 				}
 			}
-			goto IL_077f;
+			goto IL_077c;
 		}
 		IL_0120:
 		unchecked
@@ -211,7 +211,7 @@ internal static partial class advance
 			{
 				((lzham_lzcompressor_state_base*)@this)->m_cur_state -= 6;
 			}
-			goto IL_0761;
+			goto IL_075e;
 		}
 		IL_03e5:
 		unchecked
@@ -248,9 +248,9 @@ internal static partial class advance
 				}
 			}
 			((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 8, 11);
-			goto IL_0761;
+			goto IL_075e;
 		}
-		IL_06d5:
+		IL_06d2:
 		unchecked
 		{
 			long num8 = (uint)localsPointer->field_0;
@@ -264,29 +264,29 @@ internal static partial class advance
 				if (!flag11)
 				{
 					flag2 = false;
-					goto IL_077f;
+					goto IL_077c;
 				}
 			}
 			update_match_hist.Invoke(@this, ((lzham_CLZDecompBase*)lzdec)->m_match_hist);
 			((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 7, 10);
-			goto IL_0761;
+			goto IL_075e;
 		}
-		IL_077f:
+		IL_077c:
 		bool result = flag2;
 		StackFrameList.Current.Clear(startFrame);
 		return result;
-		IL_0761:
+		IL_075e:
 		unchecked
 		{
 			((lzham_lzcompressor_state_base*)@this)->m_cur_ofs = ((lzham_CLZDecompBase*)lzdec)->m_cur_ofs + Get_len_wzf5xk.Invoke(lzdec);
 			flag2 = true;
-			goto IL_077f;
+			goto IL_077c;
 		}
 		IL_02fe:
 		unchecked
 		{
 			((lzham_lzcompressor_state_base*)@this)->m_cur_state = InstructionHelper.Select((uint)((lzham_lzcompressor_state_base*)@this)->m_cur_state < 7u, 8, 11);
-			goto IL_0761;
+			goto IL_075e;
 		}
 	}
 }

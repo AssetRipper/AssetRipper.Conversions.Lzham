@@ -5,5 +5,6 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
   </Folder>
+  <Project Path="AssetRipper.Conversions.Lzham.Tests/AssetRipper.Conversions.Lzham.Tests.csproj" Id="651e6f43-3524-40b5-b37d-846716628547" />
   <Project Path="AssetRipper.Conversions.Lzham/AssetRipper.Conversions.Lzham.csproj" />
 </Solution>
